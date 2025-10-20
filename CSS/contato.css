@@ -1,0 +1,15 @@
+.contato h1{
+    font-size: 40px;
+    color: rgba(47, 126, 62, 1);
+}
+.texto-contato{
+    width: 587px;
+    height: 120px;
+    font-size: 22px;
+}
+.texto-contato-pai{
+    width: 608px;
+    height: 212px;
+    text-align: start;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
