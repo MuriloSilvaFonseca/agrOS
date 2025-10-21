@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/duvidas.css">
+    <link rel="stylesheet" href="css/funcio.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <title>Duvidas frequentes</title>
+</head>
+<body>
+    <section class="duvidas-frequentes">
+        <div class="duvidas-titulo">
+            <h1>Dúvidas <span class="dest-verde">frequentes</span></h1>
+            <h2>Confira aqui as principais dúvidas de nossos clientes sobre nossas soluções, planos e pagamentos.</h2>
+        </div>
+
+        <div class="conj-cards-duvidas">
+            <div class="cards-esquerda-duvida">
+                <div class="card-duvida">
+                    <h2>O que é um sistema online de gestão?</h2>
+                    <img class="testejs-1" src="imagem/duvidas/extensaoSomaPreto.png" alt="">
+                    <p></p>
+                </div>
+
+                <div class="card-duvida">
+                    <h2>O que é um sistema online de gestão?</h2>
+                    <img class="testejs-2" src="imagem/duvidas/extensaoSomaPreto.png" alt="">
+                    <p></p>
+                </div>
+
+                <div class="card-duvida">
+                    <h2>O que é um sistema online de gestão?</h2>
+                    <img class="testejs-3" src="imagem/duvidas/extensaoSomaPreto.png" alt="">
+                    <p></p>
+                </div>
+            </div>
+
+             <div class="cards-direita-duvida">
+                <div class="card-duvida">
+                    <h2>O que é um sistema online de gestão?</h2>
+                    <img class="testejs-4" src="imagem/duvidas/extensaoSomaPreto.png" alt="">
+                    <p></p>
+                </div>
+
+                <div class="card-duvida">
+                    <h2>O que é um sistema online de gestão?</h2>
+                    <img class="testejs-5" src="imagem/duvidas/extensaoSomaPreto.png" alt="">
+                    <p></p>
+                </div>
+
+                <div class="card-duvida">
+                    <h2>O que é um sistema online de gestão?</h2>
+                    <img class="testejs-6" src="imagem/duvidas/extensaoSomaPreto.png" alt="">
+                    <p></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function(){
+
+            $(".testejs-1").click(function(){
+                let p = $(this).next();
+
+                $(p).text("Um sistema online de gestão é uma plataforma que permite a gestão de diferentes processos da sua loja de forma integrada, como vendas, estoque, produtos, clientes, entre outros, em uma única plataforma online acessível a partir de qualquer dispositivo conectado à internet.");
+
+                $(p).css({
+                    marginTop: "10px"   
+                });
+
+                let cardDuvida = $(this).parent();
+                $(cardDuvida).addClass("clickMais");
+                
+                $(this).attr("class", "testejs-1click")
+
+                $(".testejs-1click").click(function(){
+                    let p = $(this).next();
+
+                    $(p).text("");
+
+                    $(p).css({
+                        marginTop: "0px"   
+                    });
+
+                    let cardDuvida = $(this).parent();
+                    $(cardDuvida).removeClass("clickMais");
+                    
+                    $(this).attr("class", "testejs-1");
+                });
+            });
+
+            
+        });
+    </script>
+</body>
+</html>
