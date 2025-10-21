@@ -1,0 +1,119 @@
+.contato{
+    justify-self: center;
+    margin: auto;
+    max-width: 1240px;
+    height: 900px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100px repeat(2, 1fr) 100px;
+}
+.coluna-texto{  
+    width: 95%;
+    height: 800px;
+    align-self: center;
+    justify-items: start;
+    border-right: 1px solid rgba(217, 217, 217, 1);
+    grid-column:  2 / 3;
+}
+.check-pai-contato{
+    padding-top: 25px;
+}
+.check-contato{
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    height: 32px;
+    padding-top: 20px;
+}
+.check-contato img{
+    padding-right: 10px;
+}
+.check-contato div{
+    display: flex;
+    align-items: center;
+}
+.contato h1{
+    font-size: 40px;
+    color: rgba(47, 126, 62, 1);
+}
+.texto-contato{
+    width: 89%;
+    height: 120px;
+    font-size: 20px;
+}
+.texto-contato-pai{
+    width: 95%;
+    max-height: 280px;
+    text-align: start;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
+.check-pai-botoes-contato{
+    padding-top: 45px;
+}
+.check-botao-contato{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 17px;
+    padding-top: 3px;
+}
+.check-botao-contato img{
+    padding-right: 10px;
+    height: 28px;
+    width: 28px;
+}
+.coluna-formulario{
+    width: 90%;
+    height: 800px;
+    grid-column:  3 / 4;
+    justify-self: center;
+    align-self: center;
+}
+.formulario-pai-contato{
+    width: 540px;
+    height: 680px;
+    background-color: rgba(250, 250, 250, 0.18);
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    justify-self: center;
+    align-self: center;
+}
+.formulario-alinhamento{
+    color: rgba(47, 126, 62, 1);
+    font-weight: bold;
+    text-align: start;
+    justify-self: center;
+    width: 480px;
+    padding-top: 14px;
+}
+.formulario-alinhamento label{
+    padding-left: 10px;
+}
+.formulario-alinhamento input{
+    width: 465px;
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid rgba(79, 79, 79, 1);
+    padding-left: 15px;
+}
+textarea{
+    width: 460px;
+    height: 225px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-top: 8px;
+}
+.botao-envio{
+    margin-top: 15px;
+    height: 56px;
+    width: 478px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(123, 192, 67, 0.9) ;
+    color: white;
+    font-size: 20px;
+}
+.coluna-formulario a {
+    text-decoration: none;
+    color: rgba(45, 156, 219, 1);
+}
