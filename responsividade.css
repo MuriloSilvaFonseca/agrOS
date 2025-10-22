@@ -1,0 +1,109 @@
+@media (max-width: 1190px) {
+
+  /* card que contem o container de formulario */
+  .content-pagamento {
+    max-width: 700px;
+    border-radius: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+
+  }
+
+  /* formulário wrapper */
+.form-pagamento {
+
+  border: none;
+  width: 100%;
+}
+
+.header-form h1 {
+  font-size: 1.5em;
+}
+
+.label-pagamento {
+  font-size: 16px;
+}
+
+.card-form {
+  max-width: 100%;
+}
+
+/* card dos detalhes do pedido */
+.detalhe-pedido {
+  width: 100%;
+}
+  
+}
+
+@media (max-width: 412px) {
+
+  /* card que contem o container de formulario */
+  .content-pagamento {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* formulário wrapper */
+.form-pagamento {
+  border: none;
+  width: 100%;
+}
+
+.header-form h1 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.card-form {
+  max-width: 100%;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+}
+
+.header-form {
+  padding:23px 0; 
+}
+
+.footer-form {
+  padding: 10px 10px 20px 10px;
+}
+
+.label-pagamento {
+  font-size: 14px;
+  padding: 10px 0px 8px 2px;
+}
+
+.input-pagamento {
+  width: 100%;
+  height: 25px;
+}
+
+.input-pagamento img {
+  width: 32px;
+  height: 20px;
+}
+
+/* grupo que tem os dois campos lado a lado */
+.group-form {
+  gap: 10px; 
+  max-width: 100%;
+}
+
+/* card dos detalhes do pedido */
+.detalhe-pedido {
+  width: 100%;
+}
+
+.card-pedido {
+  padding: 20px 0;
+  background-color: transparent;
+  border: none
+}
+  
+}
+
+
+
+
+
