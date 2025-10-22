@@ -5,42 +5,107 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* container principal */
 #container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    padding: 20px;
 }
 
 .content-pagamento {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1440px;
-    height: 100%;
-    background-color: rgba(90, 90, 90, 0.377);
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    gap: 40px;
+    width: 100%;
+    max-width: 1440px;
+    border-radius: 20px;
+    padding: 40px;
 }
 
+/* formulário */
 .form-pagamento {
-    border-right: 1px solid black;
+    border-right: 1px solid #D9D9D9;
     width: 705px;
-    height: fit-content;
-}
-
-.detalhe-pedido {
-    margin-left: 64px;
-    width: 463px;
-    height: 500px;
-
+    min-width: 300px;
 }
 
 .card-form {
     background-color: #FBFBFB;
     border-radius: 15px;
     display: flex;
-    width: 657px;
-    height: 764px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 620px;
+    height: fit-content;
+    border: 1px solid #D9D9D9;
+}
+
+.header-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 23px;
+}
+
+.header-form h1 {
+    font-size: 1.7em;
+}
+
+.label-pagamento {
+    font-size: 19px;
+    padding: 15px 0px 8px 2px;
+}
+
+.label-pagamento-header {
+    font-weight: 600;
+}
+
+.label-pagamento-footer{
+    font-weight: 500;
+}
+
+.input-pagamento {
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 20px;
+    background-color: #F9F9F9;
+    border: 1px solid #A8A8A8;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #bcbcbc61;
+  padding: 23px;
+  border-radius: 15px;
+}
+
+/* grupo que contém os dois campos lado a lado */
+.group-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* espaçamento entre os dois campos */
+  width: 100%;
+  background-color: transparent; /* tirando o azul de fundo */
+}
+
+/* cada campo dentro do grupo */
+.sub-group-form {
+  display: flex;
+  flex-direction: column; /* label em cima, input embaixo */
+  flex: 1; /* cada um ocupa metade do espaço */
+}
+
+/* detalhes do pedido */
+.detalhe-pedido {
+    width: 463px;
+    min-width: 280px;
 }
 
 .card-pedido {
@@ -48,8 +113,9 @@
     flex-direction: column;
     padding: 25px;
     background-color: #FBFBFB;
+    border: 1px solid #D9D9D9;
     border-radius: 15px;
-    height: 290px;
+    height: auto;
 }
 
 .titulo-card-pedido {
@@ -69,27 +135,24 @@
     max-width: 400px;
 }
 
-.valor-plano{
+/* valores */
+.previa-valor-plano, .total-valor-plano {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 40px 0 10px 0;
-    border-bottom: 1px solid #D9D9D9;
-}
-
-.valor-plano p {
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.total-valor-plano {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 10px 0;
 }
 
-.total-valor-plano p {
+.previa-valor-plano {
+    border-bottom: 1px solid #D9D9D9;
+    padding-top: 40px;
+}
+
+.previa-valor-plano p, .total-valor-plano p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.total-valor-plano p:last-child {
     font-weight: 600;
     font-size: 17px;
 }
@@ -98,7 +161,6 @@
 .container-finalizar {
     display: flex;
     width: 100%;
-    height: fit-content;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -107,7 +169,7 @@
 .p-termos {
     padding: 10px;
     font-size: 12px;
-    font-weight: 400;
+    text-align: center;
 }
 
 .p-termos a {
@@ -116,29 +178,31 @@
 }
 
 .compra-btn {
-    height: 45px;
-    width: 450px;
+    height: 51px;
+    width: 100%;
+    max-width: 450px;
     border-radius: 17px;
     border: none;
     font-size: 17px;
     margin-bottom: 20px;
 }
 
-#finaliza-btn{
-color: white;
-background-color: #61AFE2;
+#finaliza-btn {
+    color: white;
+    background-color: #61AFE2;
 }
 
-#cancelar-btn{
+#cancelar-btn {
     color: #97C9E9;
     border: 2px solid #97C9E9;
     background-color: #ffffff;
 }
 
-
 .p-criptografados {
-    padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.521);
     font-weight: 400;
+    text-align: center;
 }
+
+
