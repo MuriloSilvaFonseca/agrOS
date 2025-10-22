@@ -130,7 +130,7 @@ textarea{
     text-decoration: none;
     color: rgba(45, 156, 219, 1);
 }
-@media  (max-width: 1199px) {
+@media  (max-width: 750px) {
     .contato{
         display: block;
         height: 400px;
