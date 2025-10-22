@@ -26,7 +26,7 @@
   .titulo {
     font-size: 3rem;
     color: #7ab648;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   
    
     
@@ -57,13 +57,13 @@
     background-color: #dff1d6;
     color: #000000;
 
-    padding: 12px 15px;
+    padding: 12px 20px;
     border-radius: 20px;
     width: 110px;
     margin-top:  20px;
     position: absolute;
     top: 0;
-    left: 40%;
+    left: 37%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
     ;
   }
@@ -140,4 +140,38 @@
   }
   
   
+  @media (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+     
+    }
   
+    .titulo, .subtitulo {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+  
+    .card {
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .titulo {
+      font-size: 2rem;
+    }
+  
+    .valor {
+      font-size: 2rem;
+    }
+  
+    .botao {
+      width: 100%;
+    }
+  }
