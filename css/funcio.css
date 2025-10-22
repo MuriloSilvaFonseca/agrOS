@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.funcionalidades {
+    max-width: 1240px;
+    margin: 30px auto;
+    
+}
+
+/* Titulo da section */
+
+.funcionalidades {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.funcio-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.funcio-titulo h1 {
+    margin: 15px;
+    font-size: 40px;
+}
+
+.funcio-titulo h2 {
+    font-size: 20px;
+    width: 63%;
+    font-weight: normal;
+    margin: 0;
+}
+
+.dest-verde {
+    color: #5FA32F;
+}
+
+
+/* Cards */
+
+.conj-cards-funcio {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.card-funcio {
+    display: grid;
+    align-items: center;
+    width: 395px;
+    height: 300px;
+    color: #EBEBEB;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    padding: 20px;
+    gap: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.7s ease, box-shadow 0.3s ease;
+}
+
+.card-funcio img {
+    border: 3px solid #EBEBEB;
+    border-radius: 100%;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.card-funcio h2 {
+    font-size: 27px;
+    margin: 0;
+}
+
+.card-funcio p {
+    grid-column: 1 / 5;
+    grid-row: 2 / 5;
+    margin: 0;
+    font-size: 20px;
+    height: 100%;
+}
+
+.verde3 {
+    background-color: #18582E;
+}
+
+.verde2 {
+    background-color: #288748;
+}
+
+.verde1 {
+    background-color: #5AA227;
+}
+.card-funcio img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-funcio:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1240px) {
+    .funcio-titulo h1 {
+        margin: 15px;
+        font-size: 35px;
+    }
+
+    .funcio-titulo h2 {
+        font-size: 18px;
+        width: 63%;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .funcionalidades {
+        max-width: 750px;
+    }
+
+    .conj-cards-funcio {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .card-funcio {
+        width: 355px;
+        height: 260px;
+    }
+
+    .card-funcio h2 {
+        font-size: 22px;
+    }
+
+    .card-funcio p {
+        font-size: 17px;
+    }
+
+    .verde3-a {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .verde3-b {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .verde2-a {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .verde2-b {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .verde1-a {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .verde1-b {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}
+
+@media (max-width: 750px) {
+    .funcio-titulo h1 {
+        margin: 15px;
+        font-size: 35px;
+    }
+
+    .funcio-titulo h2 {
+        font-size: 18px;
+        width: 100%;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .funcionalidades {
+        max-width: 400px;
+    }
+
+    .conj-cards-funcio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .card-funcio {
+        width: 100%;
+        height: 220px;
+        align-items: center;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .card-funcio br {
+        display: none;
+    }
+
+    .card-funcio h2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .card-funcio p {
+        font-size: 18px;
+        height: 100%;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+
+    }
+    
+    .card-funcio img {
+        
+    }
+
+    .verde3-a {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .verde2-a {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .verde1-a {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .verde3-b {
+       display: none;
+    }
+
+    .verde2-b {
+       display: none;
+    }
+
+    .verde1-b {
+        display: none;
+    }
+
+    .card-funcio img {
+        width: 75px;
+        height: 75px;
+        border: 3px solid #EBEBEB;
+        border-radius: 100%;
+        margin-right: 20px;
+        padding: 5px;
+    }
+}

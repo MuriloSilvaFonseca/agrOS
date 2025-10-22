@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.duvidas-frequentes {
+    max-width: 1240px;
+    margin: 30px auto;
+    background-color: rgb(99, 115, 129, 10%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.duvidas-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.duvidas-titulo h1 {
+    margin: 15px;
+    font-size: 40px;
+}
+
+.duvidas-titulo h2 {
+    font-size: 20px;
+    width: 63%;
+    font-weight: normal;
+    margin: 0;
+}
+
+.conj-cards-duvidas {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+}
+
+.cards-direita-duvida, .cards-esquerda-duvida {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    gap: 50px;
+}
+
+.card-duvida {
+    background-color: #C7E69B;
+    color: #2F7E3E;
+    display: grid;
+    width: 595px;
+    height: 82px;
+    grid-template-columns: 0.95fr 0.05fr;
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.card-duvida:hover {
+    transition: 0.7s ease;
+    color: #EBEBEB;
+    background-color: #3A7D44;
+}
+
+.clickMais {
+    height: auto;
+    background-color: #3A7D44;
+    color: #EBEBEB;
+    transition: all 1s;
+}
+
+.card-duvida h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card-duvida i {
+  font-size: 26px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.card-duvida.ativo i {
+  transform: rotate(90deg);
+  color: #EBEBEB;
+}
+
+.card-duvida p {
+    margin-bottom: 0;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 1240px) {
+    .duvidas-frequentes {
+        max-width: 750px;
+    }
+
+    .conj-cards-duvidas {
+        gap: 20px;
+    }
+
+    .card-duvida {
+        width: 365px;
+        padding: 18px 10px;
+    }
+
+    .card-duvida h2 {
+        margin: 0;
+        font-size: 16px;
+    }
+}
