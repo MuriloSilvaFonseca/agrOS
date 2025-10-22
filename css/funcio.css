@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.funcionalidades {
+    max-width: 1240px;
+    margin: 30px auto;
+    
+}
+
+
+/* Titulo da section */
+
+.funcionalidades {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.funcio-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.funcio-titulo h1 {
+    margin: 15px;
+    font-size: 40px;
+}
+
+.funcio-titulo h2 {
+    font-size: 20px;
+    width: 63%;
+    font-weight: normal;
+    margin: 0;
+}
+
+.dest-verde {
+    color: #5FA32F;
+}
+
+
+/* Cards */
+
+.conj-cards-funcio {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.card-funcio {
+    display: grid;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    color: #EBEBEB;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    padding: 20px;
+    gap: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.7s ease, box-shadow 0.3s ease;
+}
+
+.card-funcio img {
+    border: 3px solid #EBEBEB;
+    border-radius: 100%;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.card-funcio h2 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.card-funcio p {
+    grid-column: 1 / 5;
+    grid-row: 2 / 5;
+    margin: 0;
+    font-size: 20px;
+    height: 100%;
+}
+
+.verde3 {
+    background-color: #18582E;
+}
+
+.verde2 {
+    background-color: #288748;
+}
+
+.verde1 {
+    background-color: #5AA227;
+}
+.card-funcio img {
+    width: 100px;
+    height: 100px;
+}
+
+.card-funcio:hover {
+    transform: scale(1.05);
+}

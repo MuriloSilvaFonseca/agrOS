@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgrOS</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- container total -->
+    <section id="container">
+        <!-- conteudo do pagamento -->
+        <div class="content-pagamento">
+
+            <div class="form-pagamento">
+                <div class="card-form">
+                    <div class="header-form">
+
+                        <h1>Informações de pagamento</h1>
+
+                        <label class="label-pagamento label-pagamento-header" for="nome">Nome:</label>
+                        <input class="input-pagamento" type="text" id="nome">
+
+                        <label class="label-pagamento label-pagamento-header" for="email">E-mail</label>
+                        <input class="input-pagamento" type="email" id="email">
+
+                        <label class="label-pagamento label-pagamento-header" for="telefone">Telefone:</label>
+                        <input class="input-pagamento" type="text" id="telefone" placeholder="(00) 00000-0000">
+
+                        <label class="label-pagamento label-pagamento-header" for="cpf">CPF:</label>
+                        <input class="input-pagamento" type="text" id="cpf" placeholder="000.000.000-00">
+
+                    </div>
+
+                    <div class="footer-form">
+                        <!-- Campo 1: Número do cartão -->
+                        <label class="label-pagamento label-pagamento-footer" for="numero-cartao">
+                            Número do cartão:
+                        </label>
+                        <input class="input-pagamento" type="text" id="numero-cartao">
+
+                        <!-- Grupo de campos lado a lado -->
+                        <div class="group-form">
+                            <div class="sub-group-form">
+                                <label class="label-pagamento label-pagamento-footer" for="data-vencimento">
+                                    Data de vencimento:
+                                </label>
+                                <input class="input-pagamento" type="text" id="data-vencimento" placeholder="MM/AA">
+                            </div>
+
+                            <div class="sub-group-form">
+                                <label class="label-pagamento label-pagamento-footer" for="codigo-seguranca">
+                                    Código de segurança:
+                                </label>
+                                <input class="input-pagamento" type="text" id="codigo-seguranca" placeholder="CVC">
+                            </div>
+                        </div>
+
+                        <!-- Campo 4: Nome titular -->
+                        <label class="label-pagamento label-pagamento-footer" for="numero-cartao">
+                            Nome do titular do cartão:
+                        </label>
+                        <input class="input-pagamento" type="text" id="numero-cartao">
+                    </div>
+                </div>
+            </div>
+
+            <div class="detalhe-pedido">
+                <div class="card-pedido">
+
+                    <h2 class="titulo-card-pedido">Detalhes do pedido</h2>
+
+                    <div class="detalhe-plano">
+                        <h5>Plano Básico:</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="previa-valor-plano">
+                        <p>Subtotal</p>
+                        <p>R$ 999,99</p>
+                    </div>
+
+                    <div class="total-valor-plano">
+                        <p>Total</p>
+                        <p>R$ 999,99</p>
+                    </div>
+                </div>
+                <div class="container-finalizar">
+                    <p class="p-termos">Ao clicar no botão você concorda com <a href="#">Termos e Condições</a></p>
+                    
+                    <button class="compra-btn" id="finaliza-btn" type="button">Finalizar Compra</button>
+                    <button class="compra-btn" id="cancelar-btn" type="button">Cancelar</button>
+                
+                    <p class="p-criptografados">Seus pagamentos são seguros e criptografados.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script>
+      // Máscara de CPF
+        new Cleave('#cpf', {
+            delimiters: ['.', '.', '-'],
+            blocks: [3, 3, 3, 2],
+            numericOnly: true
+        });
+    </script>
+
+</body>
+</html>

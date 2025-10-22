@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header */
+#header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3A7D44;
+    width: 100%;
+    height: 95px;
+    padding: 0px 80px;
+}
+
+.container-logo {
+    display: flex;
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+/* lista menu com link dentro */
+.header-menu{
+    display: flex;
+    padding: 10px;
+    /* gap: 85px; */
+    list-style: none;
+}
+
+.header-menu li > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 100px;
+}
+
+.header-menu li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #7BC043;
+}
+
+.container-btn {
+    display: flex;
+    gap: 18px;
+}
+
+.login-btn {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+}
+
+.planos-btn {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: #7BC043;
+    font-weight: 700;
+    color: white;
+}
+
+#container-inicio {
+    background-color: rgba(88, 1, 1, 0.219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo-principal h1 {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.parte-verde {
+    color: #7BC043;
+}
+
+.paragrafos-header {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.saiba-mais-btn {
+    margin-top: 150px;
+    padding: 15px;
+    width: 400px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2F7E3E;
+    box-shadow: 0 4px 4px #00000044;
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.background-video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+}
