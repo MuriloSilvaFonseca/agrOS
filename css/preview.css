@@ -17,19 +17,22 @@ section{
     margin: auto;
     max-width: 1240px;
     background-color: rgba(99, 115, 129, 0.1);
-    height: 920px;
+    max-height: 980px;
 }
 .texto-preview{
-    padding-top: 50px;
+    padding-top: 15px;
     font-size: 20px;
+    max-width:800px;
+    justify-self: center;
 }
 .texto-preview p{
-    height: 48px;
-    width: 770px;
+    max-height: 80px;
+    max-width: 770px;
     justify-self: center;
 }
 .carrossel{
-    width: 640px;
+    min-width: 320px;
+    max-width: 550px;
     height: 53px;
     border: 1px solid rgba(58, 125, 68, 1);
     border-radius: 45px;
@@ -41,7 +44,7 @@ section{
 button{
     border: none;
     background-color: transparent;
-    width: 25%;
+    width: 24%;
     font-size: medium;
     font-weight: bolder;
 }
@@ -55,10 +58,12 @@ button{
     border-radius: 45px;
 }
 #imagem{
-    height: 496px;
-    width: 90%;
+    max-height: 496px;
+    max-width: 90%;
+    min-width: 50%;
     margin-top: 20px;
     justify-self: center;
     border: 2px solid rgba(58, 125, 68, 1);
     border-radius: 20px;
+    margin-bottom: 50px;
 }

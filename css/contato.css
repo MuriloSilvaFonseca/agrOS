@@ -83,6 +83,10 @@
     justify-self: center;
     align-self: center;
 }
+.formulario-pai-contato p{
+    width: 80%;
+    justify-self: center;
+}
 .formulario-alinhamento{
     color: rgba(47, 126, 62, 1);
     font-weight: bold;
@@ -125,4 +129,40 @@ textarea{
 .coluna-formulario a {
     text-decoration: none;
     color: rgba(45, 156, 219, 1);
+}
+@media  (max-width: 1199px) {
+    .contato{
+        display: block;
+        height: 400px;
+    }
+    .coluna-texto{
+        border: solid white;
+        justify-self: center;
+        width: 92%;
+        min-height: 150px;
+        align-self: center;
+    }
+    .coluna-texto p{
+        width: 75%;
+        justify-self: center;
+    }
+    .texto-contato-pai{
+        border: white;
+        text-align: center;
+    }
+    .texto-contato-pai h1{
+        font-size: 32px;
+    }
+    .texto-contato-pai p{
+        font-size: 17px;
+    }
+    .check-pai-contato{
+        display: none;
+    }
+    .check-pai-botoes-contato{
+        display: none;
+    }
+    .contato{
+        
+    }
 }
