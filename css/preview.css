@@ -18,6 +18,7 @@ section{
     max-width: 1240px;
     background-color: rgba(99, 115, 129, 0.1);
     max-height: 980px;
+    font-family: 'Inter', sans-serif;
 }
 .texto-preview{
     padding-top: 15px;
@@ -66,4 +67,25 @@ button{
     border: 2px solid rgba(58, 125, 68, 1);
     border-radius: 20px;
     margin-bottom: 50px;
+}
+@media  (max-width: 850px) {
+    .btn-2{
+        display: none;
+    }
+    button{
+    width: 32%;
+}
+
+}
+@media  (max-width: 450px) {
+    .btn-2, .btn-3{
+        display: none;
+    }
+    button{
+    width: 48%;
+}
+.texto-preview p{
+    max-height: 120px;
+}
+
 }

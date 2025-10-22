@@ -11,14 +11,14 @@ botoes.forEach(botao => {
 })
 })
 function propriedade(){
-            document.getElementById("imagem").src="dash.jpeg";
+            document.getElementById("imagem").src="./imagem/dash.jpeg";
 }
  function clientes(){
-            document.getElementById("imagem").src="1.jpg";
+            document.getElementById("imagem").src="./imagem/1.jpg";
 }
  function servicos(){
-            document.getElementById("imagem").src="dash.jpeg";
+            document.getElementById("imagem").src="./imagem/dash.jpeg";
 }
 function equipamento(){
-            document.getElementById("imagem").src="1.jpg";
+            document.getElementById("imagem").src="./imagem/1.jpg";
 }
