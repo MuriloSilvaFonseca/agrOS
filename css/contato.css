@@ -5,11 +5,12 @@
     height: 900px;
     text-align: center;
     display: grid;
-    grid-template-columns: 100px repeat(2, 1fr) 100px;
+    grid-template-columns: 100px 11fr 10fr 100px;
 }
 .coluna-texto{  
-    width: 95%;
-    height: 800px;
+    width: 92%;
+    max-height: 870px;
+    min-height: 720px;
     align-self: center;
     justify-items: start;
     border-right: 1px solid rgba(217, 217, 217, 1);
@@ -63,14 +64,18 @@
     width: 28px;
 }
 .coluna-formulario{
-    width: 90%;
+    max-width: 95%;
     height: 800px;
     grid-column:  3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     justify-self: center;
     align-self: center;
 }
 .formulario-pai-contato{
-    width: 540px;
+    width: 100%;
     height: 680px;
     background-color: rgba(250, 250, 250, 0.18);
     box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -83,21 +88,21 @@
     font-weight: bold;
     text-align: start;
     justify-self: center;
-    width: 480px;
+    width: 87%;
     padding-top: 14px;
 }
 .formulario-alinhamento label{
     padding-left: 10px;
 }
 .formulario-alinhamento input{
-    width: 465px;
+    width: 90%;
     height: 35px;
     border-radius: 15px;
     border: 1px solid rgba(79, 79, 79, 1);
     padding-left: 15px;
 }
 textarea{
-    width: 460px;
+    width: 90%;
     height: 225px;
     border-radius: 10px;
     padding-left: 15px;
@@ -106,7 +111,11 @@ textarea{
 .botao-envio{
     margin-top: 15px;
     height: 56px;
-    width: 478px;
+    width: 90%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     border: none;
     background-color: rgba(123, 192, 67, 0.9) ;
