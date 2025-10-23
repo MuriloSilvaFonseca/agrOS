@@ -3,7 +3,7 @@ $(".card-duvida").click(function() {
             let p = $(this).children("p");
             let cardDuvida = $(this);
 
-            if ($(this).hasClass("ativo")) {
+            if ($(this).hasClass("ativo-duvidas")) {
                 $(p).slideUp(400, function() {
                     $(cardDuvida).removeClass("clickMais");
                     $(p).css({ marginTop: "0px" });
@@ -11,7 +11,7 @@ $(".card-duvida").click(function() {
 
                 });
 
-                $(this).removeClass("ativo");
+                $(this).removeClass("ativo-duvidas");
 
             } else {
                 if ($(cardDuvida).hasClass("card-duvida-1")) {
@@ -34,7 +34,7 @@ $(".card-duvida").click(function() {
                 }
             
                 $(cardDuvida).addClass("clickMais");
-                $(this).addClass("ativo");
+                $(this).addClass("ativo-duvidas");
                 $(p).css({ marginTop: "10px" }).hide().slideDown(400);
 
 
