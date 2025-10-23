@@ -41,7 +41,7 @@
     justify-content: space-around;
     align-items: center;
 }
-button{
+.button-preview{
     border: none;
     background-color: transparent;
     width: 24%;
@@ -71,7 +71,7 @@ button{
     .btn-2{
         display: none;
     }
-    button{
+    .button-preview{
     width: 32%;
 }
 
@@ -80,7 +80,7 @@ button{
     .btn-2, .btn-3{
         display: none;
     }
-    button{
+    .button-preview{
     width: 48%;
 }
 .texto-preview p{
