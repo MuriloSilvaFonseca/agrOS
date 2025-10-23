@@ -6,37 +6,30 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* Centralização total da página */
-body {
-  background-color: #f7f8fa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
 /* Seção principal */
 .clientes {
   text-align: center;
   color: #333;
   max-width: 600px;
   width: 90%;
+  margin: auto;
+  background-color: #f7f8fa;
 }
 
 /* Título */
-.titulo {
+.titulo-clientes {
   font-size: clamp(1.8rem, 4vw, 3rem);
   color: #7ab648;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
-.titulo span {
+.titulo-clientes span {
   font-weight: 600;
 }
 
 /* Descrição */
-.descricao {
+.descricao-clientes {
   color: #555;
   font-size: 1rem;
   margin-bottom: 30px;
@@ -44,7 +37,7 @@ body {
 }
 
 /* Card */
-.card {
+.card-clientes {
   background-color: #f0f7eb;
   border-radius: 15px;
   padding: 80px 30px;
@@ -55,13 +48,13 @@ body {
   transition: all 0.3s ease;
 }
 
-.card:hover {
+.card-clientes:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Cabeçalho do card */
-.cliente-info {
+.cliente-info-clientes {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,7 +63,7 @@ body {
 }
 
 /* Avatar */
-.avatar {
+.avatar-clientes {
   width: 80px;
   height: 80px;
   border: 2px solid #ccc;
@@ -79,29 +72,29 @@ body {
   flex-shrink: 0;
 }
 
-.img-perfil {
+.img-perfil-clientes {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* Nome e empresa */
-.cliente-nome {
+.cliente-nome-clientes {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.cliente-dados{
+.cliente-dados-clientes{
   flex-grow: 1;
   margin-left: 12px;
 }
 
-.cliente-empresa {
+.cliente-empresa-clientes {
   color: #53a3f5;
   font-size: 1rem;
 }
 
 /* Aspas decorativas */
-.aspas {
+.aspas-clientes {
   font-size: 4.4rem;
   color: #66666673;
   font-weight: bold;
@@ -110,7 +103,7 @@ body {
 }
 
 /* Comentário */
-.comentario {
+.comentario-clientes {
   font-size: 1rem;
   color: #333;
   line-height: 1.6;
@@ -118,26 +111,26 @@ body {
 
 /* Responsivo */
 @media (max-width: 480px) {
-  .titulo {
+  .titulo-clientes {
     font-size: 1.8rem;
   }
 
-  .card {
+  .card-clientes {
     padding: 30px;
   }
 
-  .cliente-info {
+  .cliente-info-clientes {
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .avatar {
+  .avatar-clientes {
     width: 50px;
     height: 50px;
   }
 
-  .comentario {
+  .comentario-clientes {
     font-size: 0.95rem;
   }
 }

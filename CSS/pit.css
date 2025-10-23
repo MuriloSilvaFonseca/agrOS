@@ -3,41 +3,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
   }
   
   /* Container centralizado */
-  body {
-    background-color: #f9fafb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
   
-  .container {
+  .container-planos {
     text-align: center;
+    background-color: #f9fafb;
     color: #333;
     width: 100%;
     max-width: 400px;
+    margin: 0 auto;
   }
   
   /* Título */
-  .titulo {
+  .titulo-planos {
     font-size: 3rem;
     color: #7ab648;
-    margin-bottom: 25px;
-  
-   
-    
-    
+    margin-bottom: 25px;   
   }
   
-  .titulo strong {
+  .titulo-planos strong {
     color: #53a3f5;
   }
   
-  .subtitulo {
+  .subtitulo-planos {
     font-size: 1rem;
     color: #999;
     margin-bottom: 30px;
@@ -45,7 +35,7 @@
   }
   
   /* Card */
-  .card {
+  .card-planos {
     background: #fcfff9;
     padding: 80px 50px;
     border-radius: 15px;
@@ -68,36 +58,36 @@
     ;
   }
   
-  .descricao {
+  .descricao-planos {
     font-size: rem;
     color: #444;
     margin-bottom: 15px;
     margin: 0 auto 60px;
   }
   
-  .preco {
+  .preco-planos {
     margin-bottom: 15px;
    
   }
   
-  .cifrao {
+  .cifrao-planos {
     font-size: 2rem;
     
   }
   
-  .valor {
+  .valor-planos {
     font-size: 4rem;
     font-weight: 700;
     color: #222;
   }
   
-  .mes {
+  .mes-planos {
     color: #53a3f5;
     font-size: 2rem;
   }
   
   /* Linha divisória */
-  hr {
+  .linha-planos {
     border: none;
     height: 1px;
     background: #7BC043;
@@ -105,13 +95,13 @@
   }
   
   /* Benefícios */
-  .titulo-beneficios {
+  .titulo-beneficios-planos {
     font-weight: 600;
     margin-bottom: 8px;
     
   }
   
-  .beneficios ul {
+  .beneficios-planos ul {
     list-style: none;
     font-size: 1rem;
     text-align: left;
@@ -120,7 +110,7 @@
   }
   
   /* Botão */
-  .botao {
+  .botao-planos {
     background-color: #8dc971;
     color: white;
     border: none;
@@ -135,43 +125,43 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
   }
   
-  .botao:hover {
+  .botao-planos:hover {
     background-color: #78b35f;
   }
   
   
   @media (min-width: 768px) {
-    .container {
+    .container-planos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
      
     }
   
-    .titulo, .subtitulo {
+    .titulo-planos, .subtitulo-planos {
       grid-column: 1 / -1;
       text-align: center;
     }
   
-    .card {
+    .card-planos {
       margin: 0;
     }
   }
   
   @media (max-width: 480px) {
-    body {
+    .container-planos {
       padding: 1rem;
     }
   
-    .titulo {
+    .titulo-planos {
       font-size: 2rem;
     }
   
-    .valor {
+    .valor-planos {
       font-size: 2rem;
     }
   
-    .botao {
+    .botao-planos {
       width: 100%;
     }
   }
