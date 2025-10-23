@@ -1,7 +1,4 @@
-section{
-    width: 100%;
-    text-align: center;
-}
+
 .preview b{
    color: rgba(45, 156, 219, 1);
    text-align: center;
@@ -12,6 +9,8 @@ section{
     font-size: 48px;
 }
 .preview{
+    width: 100%;
+    text-align: center;
     justify-content: center;
     justify-self: center;
     margin: auto;
