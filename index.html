@@ -28,10 +28,10 @@
 
         <div class="nav-bar">
             <ul class="header-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Vantagens</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Suporte</a></li>
+                <li><a href="#container-inicio">Home</a></li>
+                <li><a href="#funcionalidades">Vantagens</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#suporte">Suporte</a></li>
             </ul>
         </div>
 
@@ -51,10 +51,10 @@
 
         <div class="menu-mobile" id="menuMobile">
             <ul>
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#">Vantagens</a></li>
-                <li><a href="#">Planos</a></li>
-                <li><a href="#">Suporte</a></li>
+                <li><a href="http://3.237.239.190">Entrar</a></li>
+                <li><a href="#funcionalidades">Vantagens</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#suporte">Suporte</a></li>
             </ul>
         </div>
     </section>
@@ -77,8 +77,7 @@
     </section>
 
     
-
-    <section class="funcionalidades">
+    <section class="funcionalidades" id="funcionalidades">
         <div class="funcio-titulo">
             <h1>Funcionalidades e <span class="dest-verde">Vantagens</span></h1>
             <h2>Economize tempo e aumente a produtividade do seu negócio de forma simples e eficaz. Esteja sempre no controle de tudo!</h2>
@@ -186,7 +185,7 @@
             </div>
     </section>
             
-    <section class="contato">
+    <section class="contato" id="suporte">
         <div class="coluna-texto">
             <div class="texto-contato-pai">
             <h1>Entre em contato conosco</h1>
@@ -234,105 +233,6 @@
         </div>
     </section>
 
-     <!-- container total -->
-    <section id="container">
-        <!-- conteudo do pagamento -->
-        <div class="content-pagamento">
-
-            <div class="form-pagamento">
-                <div class="card-form">
-                    <div class="header-form">
-
-                        <h1>Informações de pagamento</h1>
-
-                        <label class="label-pagamento label-pagamento-header" for="nome">Nome:</label>
-                        <input class="input-pagamento" type="text" id="nome" placeholder="Nome completo">
-
-                        <label class="label-pagamento label-pagamento-header" for="email">E-mail</label>
-                        <input class="input-pagamento" type="email" id="email" placeholder="exemplo@exemplo.com">
-
-                        <label class="label-pagamento label-pagamento-header" for="telefone">Telefone:</label>
-                        <input class="input-pagamento" type="text" id="telefone" placeholder="(00) 00000-0000">
-
-                        <label class="label-pagamento label-pagamento-header" for="cpf">CPF:</label>
-                        <input class="input-pagamento" type="text" id="cpf" placeholder="000.000.000-00">
-
-                    </div>
-
-                    <div class="footer-form">
-                        <!-- Campo 1: Número do cartão -->
-                        <label class="label-pagamento label-pagamento-footer" for="numero-cartao">
-                            Número do cartão:
-                        </label>
-                        <div class="input-pagamento">
-                            <input class="input-vazio" type="text" id="numero-cartao" placeholder="####-####-####-####">
-                            <img src="imagem/card.png" alt="">
-                        </div>
-
-                        <!-- Grupo de campos lado a lado -->
-                        <div class="group-form">
-                            <!-- Campo 2: Data de vencimento -->
-                            <div class="sub-group-form">
-                                <label class="label-pagamento label-pagamento-footer" for="data-vencimento">
-                                    Data de vencimento:
-                                </label>
-                                <input class="input-pagamento" type="text" id="data-vencimento" placeholder="MM/AA">
-                            </div>
-
-                            <!-- Campo 3: Codigo de segurança -->
-                            <div class="sub-group-form">
-                                <label class="label-pagamento label-pagamento-footer" for="codigo-seguranca">
-                                    CVV:
-                                </label>
-                                <input class="input-pagamento" type="text" id="codigo-seguranca" placeholder="CVV">
-                            </div>
-                        </div>
-
-                        <!-- Campo 4: Nome titular -->
-                        <label class="label-pagamento label-pagamento-footer" for="titular-cartao">
-                            Nome do titular do cartão:
-                        </label>
-                        <input class="input-pagamento" type="text" id="titular-cartao" placeholder="Digite o nome escrito no verso do cartão">
-                    </div>
-                </div>
-            </div>
-
-            <div class="detalhe-pedido">
-                <div class="card-pedido">
-
-                    <h2 class="titulo-card-pedido">Detalhes do pedido</h2>
-
-                    <div class="detalhe-plano">
-                        <h5>Plano Básico:</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-
-                    <div class="previa-valor-plano">
-                        <p>Subtotal</p>
-                        <p>R$ 999,99</p>
-                    </div>
-
-                    <div class="total-valor-plano">
-                        <p>Total</p>
-                        <p>R$ 999,99</p>
-                    </div>
-                </div>
-
-                <div class="container-finalizar">
-                    <p class="p-termos">Ao clicar no botão você concorda com <a href="#">Termos e Condições</a></p>
-                    
-                    <button class="compra-btn" id="finalizar-btn" type="button">Finalizar Compra</button>
-                    <button class="compra-btn" id="cancelar-btn" type="button">Cancelar</button>
-                
-                    <p class="p-criptografados"><span style="font-size: 19px;" class="material-symbols-outlined">
-                        lock
-                        </span>Seus pagamentos são seguros e criptografados.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
     <section class="clientes">
     <h2 class="titulo-clientes"><span>Nossos</span> Clientes</h2>
     <p class="descricao-clientes">
@@ -366,7 +266,7 @@
     </div>
     </section>
 
-    <section class="section-planos">
+    <section class="section-planos" id="planos">
     <div class="container-planos">
         <h1 class="titulo-planos"><span>agr</span><strong>OS</strong> Planos</h1>
         <p class="subtitulo-planos">
@@ -436,17 +336,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="./script/duvidas.js"></script>
-    <script>
-        // para alternar o estado do hamburguer
-        const hamburger = document.querySelector('.hamburger');
-        const menuMobile = document.getElementById('menuMobile');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            menuMobile.classList.toggle('active');
-        });
-    </script>
+    <script src="script/duvidas.js"></script>
+    <script src="script/header.js"></script>
     <script src="script/carrossel.js"></script>
 </body>
 </html>
