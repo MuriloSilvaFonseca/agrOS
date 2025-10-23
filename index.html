@@ -4,8 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgrOS</title>
+    
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/duvidas.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/funcio.css">
+    <link rel="stylesheet" href="./css/preview.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/duvidas.css">
+    <link rel="stylesheet" href="./css/funcio.css">
+    <script src="./script/jquery-3.5.1.min.js"></script>
+    <script src="./script/carrossel.js"></script>
+    <script src="./script/duvidas.js" defer></script>
+    
+    
 </head>
 <body>
- 
+    <section class="funcionalidades">
+        <div class="funcio-titulo">
+            <h1>Funcionalidades e <span class="dest-verde">Vantagens</span></h1>
+            <h2>Economize tempo e aumente a produtividade do seu negócio de forma simples e eficaz. Esteja sempre no controle de tudo!</h2>
+        </div>
+
+        <div class="conj-cards-funcio">
+            <div class="card-funcio verde3 verde3-a">
+                <img src="imagem/funcionalidades/controleEst.png" alt="cubo">
+                <h2>Controle de estoque</h2>
+                <p>Gerenciamento e monitoramento eficiente de produtos armazenados para evitar desperdícios e prejuízos.</p>
+            </div>
+
+             <div class="card-funcio verde2 verde2-a">
+                <img src="imagem/funcionalidades/baseClientes.png" alt="cubo">
+                <h2>Base de <br>clientes</h2>
+                <p>Aniversariantes do mês, resumo de compras do cliente, crédito na loja, clientes que mais compram.</p>
+            </div>
+
+             <div class="card-funcio verde1 verde1-a">
+                <img src="imagem/funcionalidades/controleVendas.png" alt="cubo">
+                <h2>Controle <br>de vendas</h2>
+                <p>Gestão de vendas condicionais, crediário (carnê), caixa, máquinas de cartão, emissão de nota fiscal e cupom não fiscal.</p>
+            </div>
+
+             <div class="card-funcio verde3 verde3-b">
+                <img src="imagem/funcionalidades/controleEst.png" alt="cubo">
+                <h2>Base de <br>clientes</h2>
+                <p>Aniversariantes do mês, resumo de compras do cliente, crédito na loja, clientes que mais compram.</p>
+            </div>
+
+             <div class="card-funcio verde2 verde2-b">
+                <img src="imagem/funcionalidades/graficoRel.png" alt="cubo">
+                <h2>Gráficos e <br>relatórios</h2>
+                <p>Dados essenciais para auxiliar e te guiar nas decisões estratégicas e mais importantes do seu negócio.</p>
+            </div>
+
+             <div class="card-funcio verde1 verde1-b">
+                <img src="imagem/funcionalidades/gestao.png" alt="cubo">
+                <h2>Gestão <br>multilojas</h2>
+                <p>Monitore suas lojas de forma integrada, transfira estoque entre filiais e gere relatórios conjuntos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="preview">
+        <div class="texto-preview"><h1>Pre<b>view</b></h1>
+        <p>O AgrOS te ajuda a reduzir custos e ter decisões mais assertivas.Centralize suas informações, automatize processos e aumente a sua produtividade!</p>
+        </div>
+        <div class="carrossel">
+            <button id="propriedade"  class="btn-carrossel ativo btn-1" onclick="propriedade()">Propriedades</button>
+            <button id="clientes" class="btn-carrossel btn-2"onclick="clientes()">Clientes</button>
+            <button id="servicos" class="btn-carrossel btn-3" onclick="servicos()">Ordem de serviços</button>
+            <button id="equipamento" class="btn-carrossel btn-4" onclick="equipamento()">Equipamento</button>
+        </div>
+
+            <img src="./imagem/dash.jpeg"id="imagem" >
+    </section>
+
+    <section class="duvidas-frequentes">
+            <div class="duvidas-titulo">
+                <h1>Dúvidas <span class="dest-verde">frequentes</span></h1>
+                <h2>Confira aqui as principais dúvidas de nossos clientes sobre nossas soluções, planos e pagamentos.</h2>
+            </div>
+
+            <div class="conj-cards-duvidas">
+                <div class="cards-esquerda-duvida">
+                    <div class="card-duvida card-duvida-1">
+                        <h2>Como monitorar os drones em tempo real?</h2>
+                        <i class="bi bi-plus"></i>
+                        <p></p>
+                    </div>
+
+                    <div class="card-duvida card-duvida-2">
+                        <h2>Posso ver pulverizações anteriores?</h2>
+                        <i class="bi bi-plus"></i>
+                        <p></p>
+                    </div>
+
+                    <div class="card-duvida card-duvida-3">
+                        <h2>Como é calculada a área pulverizada?</h2>
+                        <i class="bi bi-plus"></i>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="cards-direita-duvida">
+                    <div class="card-duvida card-duvida-4">
+                        <h2>O que ocorre se o drone perder sinal?</h2>
+                        <i class="bi bi-plus"></i>
+                        <p></p>
+                    </div>
+
+                    <div class="card-duvida card-duvida-5">
+                        <h2>Posso ajustar altura e vazão na dashboard?</h2>
+                        <i class="bi bi-plus"></i>
+                        <p></p>
+                    </div>
+
+                    <div class="card-duvida card-duvida-6">
+                        <h2>A dashboard gera relatórios automáticos?</h2>
+                        <i class="bi bi-plus"></i>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="duvidas.js"></script>
+
+    <section class="contato">
+        <div class="coluna-texto">
+            <div class="texto-contato-pai">
+            <h1>Entre em contato conosco</h1>
+            <span class="texto-contato">
+            <p>Tem alguma dúvida, sugestão ou quer saber mais sobre nossos serviços? Nossa equipe está pronta para ajudar você! Preencha o formulário ao lado (ou abaixo) e responderemos o mais rápido possível.</p>
+            </span>
+            
+            </div>
+            <div class="check-pai-contato">
+            <div class="check-contato"><div><img src="./imagem/check.png"></div><p>Tire suas dúvidas com nossa equipe especializada</p></div>                <div class="check-contato"><div><img src="./imagem/check.png"></div><p>Receba suporte técnico rápido e eficiente</p></div>
+            <div class="check-contato"><div><img src="./imagem/check.png"></div><p>Envie sugestões ou feedbacks sobre nossos serviços</p></div>
+            <div class="check-contato"><div><img src="./imagem/check.png"></div><p>Saiba mais sobre planos, preços e funcionalidades</p></div>
+            </div>
+
+            <div class="check-pai-botoes-contato">
+            <div class="check-botao-contato"><div><img src="./imagem/email.png"></div><p>suporteagros@example.com</p></div>
+            <div class="check-botao-contato"><div><img src="./imagem/telefone.png"></div><p>+19 98155 4785</p></div>
+            <div class="check-botao-contato"><div><img src="./imagem/email.png"></div><p>suporteagros@example.com</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="coluna-formulario">
+        <div class="formulario-pai-contato">
+
+            <div class="formulario-alinhamento">
+                <label>Nome de empresa</label>
+                <input type="text" placeholder="5555-5555-5555-5555">
+            </div>
+            <div class="formulario-alinhamento">
+                <label>E-mail</label>
+                <input type="text" placeholder="agroOs@email.com">
+            </div>
+            <div class="formulario-alinhamento">
+                 <label>Número</label>
+                <input type="text" placeholder="+00 (00) 00000-0000">
+            </div>
+            <div class="formulario-alinhamento">
+                <label>Descrição</label>
+                <textarea type="text" placeholder="Digite aqui sua dúvida..."></textarea>
+            </div>           
+
+        <button class="botao-envio">Botão</button>
+        <p>Ao entrar em contato conos você concorda com nosssos <a href=""> Termos e Condições</a></p>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="rodape-corpo-principal">
+            
+            <div class="imagem-logo-rodape"><img src=""></div>
+
+            <div class="icones-rodape">
+                <div class="icone"><img src="./imagem/instagram (1).png" alt=""></div>
+                <div class="icone"><img src="./imagem/instagram (1).png" alt=""></div>
+                <div class="icone"><img src="./imagem/instagram (1).png" alt=""></div>
+                <div class="icone"><img src="./imagem/instagram (1).png" alt=""></div>
+            </div>
+
+            <div class="sobre-rodape">
+                <h1>Sobre nós</h1>
+                <p>Termos de uso</p>
+                <p>Privacidade</p>
+                <p>Política de reembolso</p>
+            </div>
+
+            <div class="suporte-rodape">
+                <h1>Suporte</h1>
+                <div class="icones-contato"><img src="./imagem/telefone.png"><p>+19 98155 4785</p></div>
+                <div class="icones-contato"><img src="./imagem/telefone.png"><p>+19 98155 4785</p></div>
+                <div class="icones-contato"><img src="./imagem/telefone.png"><p>suporteagros@example.com</p></div>
+            </div>
+
+
+        </div>
+
+        <p class="icone-cop">© Soft Jr. s2</p>
+    </footer>
+
 </body>
 </html>
