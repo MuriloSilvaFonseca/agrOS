@@ -19,8 +19,6 @@
     width: 70px;
     border-radius: 50%;
 }
-
-/* lista menu com link dentro */
 .header-menu{
     display: flex;
     padding: 10px;
