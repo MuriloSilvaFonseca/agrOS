@@ -10,17 +10,73 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/funcio.css">
     <link rel="stylesheet" href="./css/preview.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/pagamento.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <link rel="stylesheet" href="./css/pit.css">
+    <link rel="stylesheet" href="./css/pit2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/duvidas.css">
-    <link rel="stylesheet" href="./css/funcio.css">
-    <script src="./script/jquery-3.5.1.min.js"></script>
-    <script src="./script/carrossel.js"></script>
-    <script src="./script/duvidas.js" defer></script>
-    
-    
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/carrossel.js"></script>
 </head>
 <body>
+    <section id="header">
+        <div class="container-logo">
+        </div>
+
+        <div class="nav-bar">
+            <ul class="header-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Vantagens</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </div>
+
+        <div class="container-btn">
+            <button class="login-btn">Entrar</button>
+            <button class="planos-btn">Começar Agora!</button>
+        </div>
+
+        <div class="menu-bars">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- <img src="imagem/menu.png" alt="Menu"> -->
+        </div>
+
+        <div class="menu-mobile" id="menuMobile">
+            <ul>
+                <li><a href="#">Entrar</a></li>
+                <li><a href="#">Vantagens</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="container-inicio">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="imagem/teste2.webm" type="video/webm">
+        </video>
+
+        <div class="conteudo-principal">
+            <h1><span class="parte-verde">Gestão que rende tempo e </span><br> mais resultado para a sua loja.</h1>
+
+            <div class="paragrafos-header">
+                <p>Sistema intuitivo, eficiente e acessível de onde estiver.</p>
+                <p>Descomplique sua gestão de vendas e estoque.</p>
+            </div>
+
+            <button class="saiba-mais-btn">Saiba mais</button>
+        </div>
+    </section>
+
+    
+
     <section class="funcionalidades">
         <div class="funcio-titulo">
             <h1>Funcionalidades e <span class="dest-verde">Vantagens</span></h1>
@@ -127,10 +183,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="duvidas.js"></script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./script/duvidas.js"></script>          
 
     <section class="contato">
         <div class="coluna-texto">
@@ -180,6 +235,171 @@
         </div>
     </section>
 
+     <!-- container total -->
+    <section id="container">
+        <!-- conteudo do pagamento -->
+        <div class="content-pagamento">
+
+            <div class="form-pagamento">
+                <div class="card-form">
+                    <div class="header-form">
+
+                        <h1>Informações de pagamento</h1>
+
+                        <label class="label-pagamento label-pagamento-header" for="nome">Nome:</label>
+                        <input class="input-pagamento" type="text" id="nome" placeholder="Nome completo">
+
+                        <label class="label-pagamento label-pagamento-header" for="email">E-mail</label>
+                        <input class="input-pagamento" type="email" id="email" placeholder="exemplo@exemplo.com">
+
+                        <label class="label-pagamento label-pagamento-header" for="telefone">Telefone:</label>
+                        <input class="input-pagamento" type="text" id="telefone" placeholder="(00) 00000-0000">
+
+                        <label class="label-pagamento label-pagamento-header" for="cpf">CPF:</label>
+                        <input class="input-pagamento" type="text" id="cpf" placeholder="000.000.000-00">
+
+                    </div>
+
+                    <div class="footer-form">
+                        <!-- Campo 1: Número do cartão -->
+                        <label class="label-pagamento label-pagamento-footer" for="numero-cartao">
+                            Número do cartão:
+                        </label>
+                        <div class="input-pagamento">
+                            <input class="input-vazio" type="text" id="numero-cartao" placeholder="####-####-####-####">
+                            <img src="imagem/card.png" alt="">
+                        </div>
+
+                        <!-- Grupo de campos lado a lado -->
+                        <div class="group-form">
+                            <!-- Campo 2: Data de vencimento -->
+                            <div class="sub-group-form">
+                                <label class="label-pagamento label-pagamento-footer" for="data-vencimento">
+                                    Data de vencimento:
+                                </label>
+                                <input class="input-pagamento" type="text" id="data-vencimento" placeholder="MM/AA">
+                            </div>
+
+                            <!-- Campo 3: Codigo de segurança -->
+                            <div class="sub-group-form">
+                                <label class="label-pagamento label-pagamento-footer" for="codigo-seguranca">
+                                    CVV:
+                                </label>
+                                <input class="input-pagamento" type="text" id="codigo-seguranca" placeholder="CVV">
+                            </div>
+                        </div>
+
+                        <!-- Campo 4: Nome titular -->
+                        <label class="label-pagamento label-pagamento-footer" for="titular-cartao">
+                            Nome do titular do cartão:
+                        </label>
+                        <input class="input-pagamento" type="text" id="titular-cartao" placeholder="Digite o nome escrito no verso do cartão">
+                    </div>
+                </div>
+            </div>
+
+            <div class="detalhe-pedido">
+                <div class="card-pedido">
+
+                    <h2 class="titulo-card-pedido">Detalhes do pedido</h2>
+
+                    <div class="detalhe-plano">
+                        <h5>Plano Básico:</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="previa-valor-plano">
+                        <p>Subtotal</p>
+                        <p>R$ 999,99</p>
+                    </div>
+
+                    <div class="total-valor-plano">
+                        <p>Total</p>
+                        <p>R$ 999,99</p>
+                    </div>
+                </div>
+
+                <div class="container-finalizar">
+                    <p class="p-termos">Ao clicar no botão você concorda com <a href="#">Termos e Condições</a></p>
+                    
+                    <button class="compra-btn" id="finalizar-btn" type="button">Finalizar Compra</button>
+                    <button class="compra-btn" id="cancelar-btn" type="button">Cancelar</button>
+                
+                    <p class="p-criptografados"><span style="font-size: 19px;" class="material-symbols-outlined">
+                        lock
+                        </span>Seus pagamentos são seguros e criptografados.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="clientes">
+    <h2 class="titulo-clientes"><span>Nossos</span> Clientes</h2>
+    <p class="descricao-clientes">
+      O AgrOS te ajuda a reduzir custos e ter decisões mais assertivas.<br>
+      Centralize suas informações, automatize processos e aumente a sua produtividade!
+    </p>
+
+    <div class="card-clientes">
+      <div class="cliente-info-clientes">
+        <div class="avatar-clientes">
+          <img src="https://i.pravatar.cc/80" alt="Foto do cliente Global" class="img-perfil">
+        </div>
+
+        <div class="cliente-dados-clientes">
+          <h3 class="cliente-nome-clientes">Global</h3>
+          <p class="cliente-empresa-clientes">Empresa de Software</p>
+        </div>
+<div class="avatar">
+        <div class="aspas-circulo-clientes">
+          <span class="aspas-clientes">”</span>
+        </div>
+      </div>
+      </div>
+
+      <p class="comentario-clientes">
+        Estamos muito satisfeitos em utilizar o sistema pois atende tudo que a gente estava precisando, 
+        além de um ótimo atendimento e suporte mil. Não ficamos mais sem — tem facilitado muito nossa rotina de trabalho.
+      </p>
+    </div>
+    </section>
+
+
+    <section class="container-planos">
+        <h1 class="titulo-planos"><span>agr</span><strong>OS</strong> Planos</h1>
+        <p class="subtitulo-planos">
+        Compare nossas opções e escolha o plano que melhor atende às demandas da sua loja.
+        </p>
+
+        <div class="card-planos">
+        <div class="plano-cabecalho">Plano 1</div>
+        <p class="descricao-planos">
+            Aprimore a gestão do seu terreno em qualidade com recursos adicionais.
+        </p>
+
+        <div class="preco-planos">
+            <span class="cifrao-planos">R$</span>
+            <span class="valor-planos">249</span>
+            <span class="mes-planos">/mês</span>
+        </div>
+
+        <hr class="linha-planos">
+
+        <div class="beneficios-planos">
+            <p class="titulo-beneficios-planos">Tudo do Plano 1</p>
+            <ul>
+            <li>✔ Serviços</li>
+            <li>✔ +30 relatórios</li>
+            <li>✔ Cashback</li>
+            <li>✔ Estoque</li>
+            </ul>
+        </div>
+
+        <button class="botao-planos">Botão</button>
+        </div>
+    </section>
+
     <footer>
 
         <div class="rodape-corpo-principal">
@@ -213,5 +433,15 @@
         <p class="icone-cop">© Soft Jr. s2</p>
     </footer>
 
+    <script>
+        // para alternar o estado do hamburguer
+        const hamburger = document.querySelector('.hamburger');
+        const menuMobile = document.getElementById('menuMobile');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menuMobile.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
