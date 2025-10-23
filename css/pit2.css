@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Seção principal */
+.clientes {
+  text-align: center;
+  color: #333;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  background-color: #f7f8fa;
+}
+
+/* Título */
+.titulo-clientes {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: #7ab648;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.titulo-clientes span {
+  font-weight: 600;
+}
+
+/* Descrição */
+.descricao-clientes {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Card */
+.card-clientes {
+  background-color: #f0f7eb;
+  border-radius: 15px;
+  padding: 80px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.card-clientes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho do card */
+.cliente-info-clientes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 36px;
+}
+
+/* Avatar */
+.avatar-clientes {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-perfil-clientes {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Nome e empresa */
+.cliente-nome-clientes {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.cliente-dados-clientes{
+  flex-grow: 1;
+  margin-left: 12px;
+}
+
+.cliente-empresa-clientes {
+  color: #53a3f5;
+  font-size: 1rem;
+}
+
+/* Aspas decorativas */
+.aspas-clientes {
+  font-size: 4.4rem;
+  color: #66666673;
+  font-weight: bold;
+ margin-left: 20px;
+ align-self:flex-start
+}
+
+/* Comentário */
+.comentario-clientes {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .titulo-clientes {
+    font-size: 1.8rem;
+  }
+
+  .card-clientes {
+    padding: 30px;
+  }
+
+  .cliente-info-clientes {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .avatar-clientes {
+    width: 50px;
+    height: 50px;
+  }
+
+  .comentario-clientes {
+    font-size: 0.95rem;
+  }
+}
