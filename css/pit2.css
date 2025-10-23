@@ -1,17 +1,15 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 /* Seção principal */
+.section-clientes{
+    background-color: #f7f8fa;
+    width: 100%;
+    border-bottom: 60px solid #f7f8fa ;
+    border-top: 60px solid #f7f8fa;
+  }
 .clientes {
   text-align: center;
   color: #333;
-  max-width: 600px;
-  width: 90%;
+  width: 1240px;
+  height: 80ps;
   margin: auto;
   background-color: #f7f8fa;
 }
@@ -39,6 +37,10 @@
 /* Card */
 .card-clientes {
   background-color: #f0f7eb;
+  border:  1px dotted solid black;
+  width: 60%;
+  height: 50px;
+  height: 350px;
   border-radius: 15px;
   padding: 80px 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -47,7 +49,11 @@
   margin: 0 auto;
   transition: all 0.3s ease;
 }
-
+.card-clientes-alinhamento{
+    justify-self: center;
+    align-self: center;
+    height: 350px;
+}
 .card-clientes:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);

@@ -7,15 +7,25 @@
   
   /* Container centralizado */
   
-  .container-planos {
+  .section-planos{
     text-align: center;
     background-color: #f9fafb;
     color: #333;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    height: 1000px;
+    border-bottom: 60px solid #f7f8fa;
+    border-top: 60px solid #f7f8fa;
+    display: flex;
+    justify-content: center;
+    
   }
-  
+
+  .container-planos{
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;   
+    height: 400px;
+  }
   /* Título */
   .titulo-planos {
     font-size: 3rem;
@@ -41,12 +51,12 @@
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     position: relative;
+    justify-self: center  ;
   }
   
   .plano-cabecalho {
     background-color: #dff1d6;
     color: #000000;
-
     padding: 12px 20px;
     border-radius: 20px;
     width: 110px;

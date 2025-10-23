@@ -50,6 +50,7 @@
 .container-btn {
     display: flex;
     gap: 18px;
+    width: 20%;
 }
 
 .menu-bars {
@@ -127,6 +128,7 @@
 }
 
 .planos-btn {
+    width:165px;
     padding: 10px 15px;
     border-radius: 15px;
     border: none;
@@ -171,7 +173,7 @@
     margin-top: 40px;
 }
 
-.saiba-mais-btn {
+.saiba-mais-btn{
     margin-top: 150px;
     padding: 15px;
     width: 400px;
