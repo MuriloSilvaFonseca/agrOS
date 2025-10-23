@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* header */
+#header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3A7D44;
+    width: 100%;
+    height: 95px;
+    padding: 0px 80px;
+    z-index: 2;
+}
+
+.container-logo {
+    display: flex;
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+/* lista menu com link dentro */
+.header-menu{
+    display: flex;
+    padding: 10px;
+    /* gap: 85px; */
+    list-style: none;
+}
+
+.header-menu li > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 100px;
+}
+
+.header-menu li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #7BC043;
+}
+
+.container-btn {
+    display: flex;
+    gap: 18px;
+}
+
+.menu-bars {
+    display: none;
+}
+
+.hamburger {
+  width: 36px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+    line-height: 10px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+/* Animação X centralizado */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.menu-mobile {
+  position: absolute;
+  top: 95px;
+  margin-right: 18px;
+  border-radius: 10px;
+  right: 0;
+  width: 210px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: none;
+}
+
+.menu-mobile.active {
+  display: block; /* aparece quando ativa */
+}
+
+.menu-mobile li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-mobile li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+/* .menu-bars img {
+  width: 45px;
+  height: 45px;
+} */
+
+.login-btn {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 700;
+}
+
+.planos-btn {
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: #7BC043;
+    font-weight: 700;
+    color: white;
+}
+
+#container-inicio {
+    background-color: rgba(88, 1, 1, 0.219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 100vh;*/
+    padding: 140px 20px;
+    position: relative; 
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo-principal h1 {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.parte-verde {
+    color: #7BC043;
+}
+
+.paragrafos-header {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 300;
+    margin-top: 40px;
+}
+
+.saiba-mais-btn {
+    margin-top: 150px;
+    padding: 15px;
+    width: 400px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2F7E3E;
+    box-shadow: 0 4px 4px #00000044;
+    color: white;
+    font-weight: 300;
+    font-size: 24px;
+    cursor: pointer;
+}
+.saiba-mais-btn:hover{
+    background-color: #22632e;
+}
+
+.background-video {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute;
+    z-index: -1;
+    filter: brightness(65%);
+    position: absolute;
+}

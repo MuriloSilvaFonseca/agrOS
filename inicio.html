@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgrOS</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="header">
+        <div class="container-logo">
+        </div>
+
+        <div class="nav-bar">
+            <ul class="header-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Vantagens</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </div>
+
+        <div class="container-btn">
+            <button class="login-btn">Entrar</button>
+            <button class="planos-btn">Começar Agora!</button>
+        </div>
+
+        <div class="menu-bars">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- <img src="imagem/menu.png" alt="Menu"> -->
+        </div>
+
+        <div class="menu-mobile" id="menuMobile">
+            <ul>
+                <li><a href="#">Entrar</a></li>
+                <li><a href="#">Vantagens</a></li>
+                <li><a href="#">Planos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="container-inicio">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="imagem/teste2.webm" type="video/webm">
+        </video>
+
+        <div class="conteudo-principal">
+            <h1><span class="parte-verde">Gestão que rende tempo e </span><br> mais resultado para a sua loja.</h1>
+
+            <div class="paragrafos-header">
+                <p>Sistema intuitivo, eficiente e acessível de onde estiver.</p>
+                <p>Descomplique sua gestão de vendas e estoque.</p>
+            </div>
+
+            <button class="saiba-mais-btn">Saiba mais</button>
+        </div>
+    </section>
+
+    <script>
+        // para alternar o estado do hamburguer
+        const hamburger = document.querySelector('.hamburger');
+        const menuMobile = document.getElementById('menuMobile');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            menuMobile.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
