@@ -1,9 +1,5 @@
 /* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
   /* Container centralizado */
   
@@ -17,7 +13,6 @@
     border-top: 60px solid #f7f8fa;
     display: flex;
     justify-content: center;
-    
   }
 
   .container-planos{
