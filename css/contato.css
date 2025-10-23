@@ -18,14 +18,14 @@
     grid-column:  2 / 3;
 }
 .check-pai-contato{
-    padding-top: 25px;
+    padding-top: 20px;
 }
 .check-contato{
     display: flex;
     align-items: center;
     font-size: 19px;
     height: 32px;
-    padding-top: 20px;
+    padding-top: 50px;
 }
 .check-contato p{
     text-align: start;
@@ -45,6 +45,7 @@
     width: 89%;
     height: 120px;
     font-size: 20px;
+    text-align: start;
 }
 .texto-contato-pai{
     width: 95%;

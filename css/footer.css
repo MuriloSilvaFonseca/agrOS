@@ -15,6 +15,9 @@ footer{
     justify-self: center;
     border-bottom: 1px solid rgba(251, 251, 251, 0.62);
 }
+.rodape-corpo-principal h1{
+    padding-top: 25px;
+}
 .icones-contato{
     display: flex;
     align-items: center;
@@ -30,7 +33,11 @@ footer{
 .imagem-logo-rodape{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    margin-top: 20px;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     width: 100px;
     border-radius: 100%;
