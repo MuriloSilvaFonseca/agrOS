@@ -1,24 +1,40 @@
 /* header */
+.section-header{
+    width: 100%;
+    background-color: #3A7D44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
 #header {
     display: flex;
-    position: fixed;
     align-items: center;
     justify-content: space-between;
-    background-color: #3A7D44;
-    width: 100%;
+    background-color: transparent;
+    max-width: 1640px;
+    width: 1640px;
     height: 95px;
     padding: 0px 80px;
-    z-index: 2;
     margin: 0;
 }
 
 .container-logo {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     height: 70px;
     width: 70px;
     border-radius: 50%;
 }
+
+.container-logo > img, .imagem-logo-rodape > img {
+    width: 100px;
+    height: 100px;
+}
+ 
 .header-menu{
     display: flex;
     padding: 10px;
@@ -43,7 +59,7 @@
 .container-btn {
     display: flex;
     gap: 18px;
-    width: 20%;
+    width: fit-content;
 }
 
 .menu-bars {
@@ -115,13 +131,15 @@
 
 .login-btn {
     padding: 10px 15px;
+    margin-left: 25px;
     border-radius: 15px;
     border: none;
     font-weight: 700;
 }
 
 .planos-btn {
-    width:165px;
+    width:auto;
+    white-space: nowrap;
     padding: 10px 15px;
     border-radius: 15px;
     border: none;
@@ -137,7 +155,7 @@
     justify-content: center;
     width: 100%;
     /* height: 100vh;*/
-    padding: 140px 20px;
+    padding: 190px 20px;
     position: relative; 
     margin: 0;
 }

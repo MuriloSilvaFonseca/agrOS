@@ -1,5 +1,5 @@
 /* container principal */
-#container {
+#section-pagamento {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,6 @@ input::placeholder {
 
 .header-form {
     display: flex;
-    width: 100%;
     flex-direction: column;
     padding: 23px;
 }
@@ -92,7 +91,7 @@ input:focus{
 .footer-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+
   background-color: #bcbcbc61;
   padding: 23px;
   border-radius: 15px;

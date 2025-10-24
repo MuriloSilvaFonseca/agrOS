@@ -1,30 +1,23 @@
-/* Reset básico */
-
-  
-  /* Container centralizado */
+/* Container centralizado */
   
   .section-planos{
     text-align: center;
-    background-color: #f9fafb;
+    background-color: rgba(99, 115, 129, 0.1);;
     color: #333;
     width: 100%;
-    height: 1000px;
-    border-bottom: 60px solid #f7f8fa;
-    border-top: 60px solid #f7f8fa;
-    display: flex;
-    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
   }
 
   .container-planos{
-    display: flex;
     justify-content: center;
-    max-width: 1440px;   
-    height: 400px;
+    max-width: 1240px;   
     justify-self: center;
   }
+
   /* Título */
   .titulo-planos {
-    font-size: 3rem;
+    font-size: 40px;
     color: #7ab648;
     margin-bottom: 25px;   
   }
@@ -34,7 +27,7 @@
   }
   
   .subtitulo-planos {
-    font-size: 1rem;
+    font-size: 20px;
     color: #999;
     margin-bottom: 30px;
     gap: 20px;
@@ -43,34 +36,33 @@
   /* Card */
   .card-planos {
     background: #fcfff9;
-    width: 380px;
+    width: 400px;
     padding: 80px 50px;
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    position: relative;
     justify-self: center ;
     grid-column: 3 / 4;
+    
   }
-  .card-planos-alinhamento{
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr ;
-  }
-  
+  /* .card-planos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+} */
   .plano-cabecalho {
     background-color: #dff1d6;
     color: #000000;
-    padding: 12px 20px;
+    padding: 12px 25px;
     border-radius: 20px;
     width: 110px;
-    margin-top:  20px;
-    position: absolute;
-    top: 0;
-    left: 37%;
+    margin-top:  5px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
-    ;
+    display: inline-block;
+    margin: 20px auto;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+    font-size: 1rem;
+    
   }
   
   .descricao-planos {
@@ -113,7 +105,6 @@
   .titulo-beneficios-planos {
     font-weight: 600;
     margin-bottom: 8px;
-    
   }
   
   .beneficios-planos ul {
@@ -139,30 +130,23 @@
     margin-top: 60px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.24);
   }
+
+  .botao-planos a {
+    text-decoration: none;
+    color: #EBEBEB;
+  }
   
   .botao-planos:hover {
     background-color: #78b35f;
   }
   
   
-  @media (min-width: 768px) {
-    .container-planos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-  
-    .titulo-planos, .subtitulo-planos {
-      grid-column: 1 / -1;
-      text-align: center;
-    }
-  
-    .card-planos {
-      margin: 0;
-    }
+   @media (max-width: 768px) {
+    
+     
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 450px) {
     .container-planos {
       padding: 1rem;
     }
@@ -178,4 +162,4 @@
     .botao-planos {
       width: 100%;
     }
-  }
+  } 

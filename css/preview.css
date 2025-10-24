@@ -1,13 +1,20 @@
-
+.section-preview{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
 .preview b{
    color: rgba(45, 156, 219, 1);
    text-align: center;
 }
+
 .preview h1{
    color: rgba(123, 192, 67, 1);
    text-align: center;
     font-size: 48px;
 }
+
 .preview{
     width: 100%;
     text-align: center;
@@ -15,21 +22,24 @@
     justify-self: center;
     margin: auto;
     max-width: 1240px;
-    background-color: rgba(99, 115, 129, 0.1);
+    background-color: transparent;
     max-height: 980px;
     font-family: 'Inter', sans-serif;
 }
+
 .texto-preview{
     padding-top: 15px;
     font-size: 20px;
-    max-width:800px;
+    max-width: 800px;
     justify-self: center;
 }
+
 .texto-preview p{
     max-height: 80px;
     max-width: 770px;
     justify-self: center;
 }
+
 .carrossel{
     min-width: 320px;
     max-width: 550px;
@@ -41,13 +51,16 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .button-preview{
     border: none;
     background-color: transparent;
     width: 24%;
     font-size: medium;
     font-weight: bolder;
+    padding: 10px;
 }
+
 .ativo{
     height: 47px;
     align-items: center;
@@ -57,6 +70,7 @@
     background-color: rgba(58, 125, 68, 1);
     border-radius: 45px;
 }
+
 #imagem{
     max-height: 496px;
     max-width: 90%;
@@ -67,10 +81,12 @@
     border-radius: 20px;
     margin-bottom: 50px;
 }
+
 @media  (max-width: 850px) {
     .btn-2{
         display: none;
     }
+
     .button-preview{
     width: 32%;
 }
@@ -80,11 +96,11 @@
     .btn-2, .btn-3{
         display: none;
     }
+
     .button-preview{
     width: 48%;
 }
 .texto-preview p{
     max-height: 120px;
 }
-
 }

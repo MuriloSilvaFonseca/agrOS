@@ -14,11 +14,13 @@ function propriedade(){
             document.getElementById("imagem").src="./imagem/dash.jpeg";
 }
  function clientes(){
-            document.getElementById("imagem").src="./imagem/1.jpg";
-}
+             document.getElementById("imagem").src="./imagem/1.jpg";
+//             document.getElementById("imagem").src="./imagem/dash.jpeg";
+ }
  function servicos(){
             document.getElementById("imagem").src="./imagem/dash.jpeg";
 }
 function equipamento(){
             document.getElementById("imagem").src="./imagem/1.jpg";
+            //    document.getElementById("imagem").src="./imagem/dash.jpeg";
 }

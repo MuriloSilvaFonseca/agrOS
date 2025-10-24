@@ -1,0 +1,208 @@
+/* Seção principal */
+.section-clientes {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #333;
+  width: 100%;
+  height: 920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.clientes {
+  /* border: dotted 1px black; */
+  text-align: center;
+  color: #333;
+  width: 90%;
+  max-width: 1400px;
+  height: 780px;
+  margin: auto;
+  background-color: transparent;
+}
+
+/* Título */
+.titulo-clientes {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: #7ab648;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.titulo-clientes span {
+  font-weight: 600;
+}
+
+/* Descrição */
+.descricao-clientes {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+/* Card */
+.card-clientes {
+  background-color: #f0f7eb;
+  border: 1px solid #c7d9c0;
+  width: 80%;
+  border-radius: 20px;
+  padding: 120px 60px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.card-clientes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho do card */
+.cliente-info-clientes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+/* Avatar */
+.avatar-clientes {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-perfil {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Nome e empresa */
+.cliente-dados-clientes {
+  flex-grow: 1;
+  margin-left: 12px;
+}
+
+.cliente-nome-clientes {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cliente-empresa-clientes {
+  color: #53a3f5;
+  font-size: 1rem;
+}
+
+/* Aspas decorativas */
+.aspas-circulo-clientes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.aspas-clientes {
+  font-size: 4.4rem;
+  color: #66666673;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: 20px;
+  margin-top: -25px;
+}
+
+/* Comentário */
+.comentario-clientes {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+/* RESPONSIVIDADE CELULAR */
+
+@media (max-width: 768px) {
+  .card-clientes {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  .cliente-info-clientes {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .avatar-clientes {
+    margin-bottom: 10px;
+  }
+
+  .cliente-dados-clientes {
+    margin-left: 0;
+  }
+
+  .aspas-circulo-clientes {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .aspas-clientes {
+    font-size: 3.5rem;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .comentario-clientes {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-clientes {
+    font-size: 1.8rem;
+  }
+
+  .descricao-clientes {
+    font-size: 0.95rem;
+  }
+
+  .card-clientes {
+    width: 95%;
+    padding: 85px 20px;
+  }
+
+  .avatar-clientes {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cliente-nome-clientes {
+    font-size: 1.3rem;
+  }
+
+  .cliente-empresa-clientes {
+    font-size: 0.95rem;
+  }
+
+  .aspas-clientes {
+    font-size: 2.8rem;
+  }
+
+  .comentario-clientes {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}

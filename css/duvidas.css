@@ -1,7 +1,14 @@
+.section-duvidas{
+    background-color: rgba(99, 115, 129, 0.1);
+    color: #333;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
 .duvidas-frequentes {
-    max-width: 1240px;
+    width: 1240px;
     margin: 30px auto;
-    background-color: rgb(99, 115, 129, 10%);
+    background-color: rgba(255, 255, 255, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,6 +37,8 @@
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     gap: 50px;
+    max-width: 1240px;
+    justify-self: center;
 }
 
 .cards-direita-duvida, .cards-esquerda-duvida {
@@ -156,6 +165,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
         gap: 20px;
+        width: 80%;
     }
 
     .cards-direita-duvida, .cards-esquerda-duvida {
