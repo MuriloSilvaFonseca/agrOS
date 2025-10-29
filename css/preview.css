@@ -3,6 +3,7 @@
     width: 100%;
     padding-bottom: 40px;
     padding-top: 40px;
+    justify-content: center;
 }
 .preview b{
    color: rgba(45, 156, 219, 1);
@@ -73,7 +74,7 @@
 
 #imagem{
     max-height: 496px;
-    max-width: 90%;
+    max-width: 85%;
     min-width: 50%;
     margin-top: 20px;
     justify-self: center;
@@ -90,7 +91,14 @@
     .button-preview{
     width: 32%;
 }
-
+.sub-titulo h2{
+    display: block;
+    max-height: 120px;
+    width: 80%;
+}
+#imagem{
+    justify-self: center;
+}
 }
 @media  (max-width: 450px) {
     .btn-2, .btn-3{
@@ -100,7 +108,13 @@
     .button-preview{
     width: 48%;
 }
-.texto-preview p{
+.parte-verde span, b{
+    font-size: 35px;
+}
+.sub-titulo h2{
+    display: block;
     max-height: 120px;
+    width: 500px;
+    
 }
 }

@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 2;
 }
+
 #header {
     display: flex;
     align-items: center;
@@ -30,7 +31,7 @@
     border-radius: 50%;
 }
 
-.container-logo > img, .imagem-logo-rodape > img {
+.container-logo > img{
     width: 100px;
     height: 100px;
 }
@@ -124,18 +125,26 @@
     padding-bottom: 15px;
 }
 
-/* .menu-bars img {
-  width: 45px;
-  height: 45px;
-} */
-
 .login-btn {
     padding: 10px 15px;
     margin-left: 25px;
     border-radius: 15px;
     border: none;
     font-weight: 700;
+    transition: 0.3s ease;
 }
+
+.planos-btn:hover {
+    background-color: #78b35f;
+}
+
+.login-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.login-btn:active, .planos-btn:active {
+    transform: scale(0.95); /* leve efeito de clique */
+  }
 
 .planos-btn {
     width:auto;
@@ -146,6 +155,7 @@
     background-color: #7BC043;
     font-weight: 700;
     color: white;
+    transition: 0.3s ease;
 }
 
 #container-inicio {
@@ -153,9 +163,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     width: 100%;
-    /* height: 100vh;*/
-    padding: 190px 20px;
+    height: 100vh;
+    /* padding: 190px 20px; */
     position: relative; 
     margin: 0;
 }
@@ -167,12 +178,13 @@
 }
 .conteudo-principal h1 {
     color: white;
-    font-size: 4em;
+    font-size: 4.3em;
     text-align: center;
-    line-height: 1.7em;
+    line-height: 1.6em;
+    margin-top: 50px;
 }
 
-.parte-verde {
+.parte-verde-inicio {
     color: #7BC043;
 }
 
@@ -187,8 +199,8 @@
 
 .saiba-mais-btn{
     margin-top: 150px;
-    padding: 15px;
-    width: 400px;
+    padding: 15px 40px;
+    width: 225px;
     border: none;
     border-radius: 25px;
     background-color: #2F7E3E;
@@ -210,4 +222,20 @@
     z-index: -1;
     filter: brightness(65%);
     position: absolute;
+}
+@media (max-width: 710px){
+    #header{
+        width: 100%;
+    } 
+}
+@media (max-width: 450px) {
+    .conteudo-principal h1 {
+        color: white;
+        font-size: 4.1em;
+        text-align: center;
+        line-height: 2.1em;
+        margin-top: 50px;
+    }
+    
+    
 }

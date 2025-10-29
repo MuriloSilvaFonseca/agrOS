@@ -89,8 +89,8 @@
 }
 
 
-.card-duvida.ativo i {
-  transform: rotate(90deg);
+.card-duvida.ativo-duvidas i {
+  transform: rotate(315deg);
   color: #EBEBEB;
 }
 
@@ -205,5 +205,9 @@
 
     .card-duvida-3, .card-duvida-6{
         display: none;
+    }
+    .container-titulo{
+        width: 80%;
+        justify-self: center;
     }
 }

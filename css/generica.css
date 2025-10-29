@@ -1,0 +1,12 @@
+.corpo-texto{
+    height: 750px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    width: 95%;
+    height: 90%;
+    background-color: rgba(128, 128, 128, 0.439);
+    margin-top: 40px;
+}

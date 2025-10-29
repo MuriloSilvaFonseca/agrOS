@@ -5,6 +5,10 @@
     font-family: 'Inter', sans-serif;
     /* outline: 1px solid red;  */
 }    
+html, body {
+    width: 100%;
+    overflow-x: hidden; /*Nao deixa fz a rolagem*/
+}
 
 /* Titulo das sections */
 
@@ -15,7 +19,7 @@
     text-align: center;
     margin-bottom: 40px;
 }
-
+ 
 .container-titulo h1 {
     margin: 15px;
     font-size: 40px;
@@ -27,6 +31,32 @@
     width: 63%;
     margin: 0;
 }
+
 .parte-azul {
     color: #2D9CDB;
+}
+
+.parte-verde {
+    color: #7BC043;
+}
+ 
+@media (max-width: 768px) {
+
+    .container-titulo {
+        margin-bottom: 25px;
+        padding: 0 20px; /* adiciona espaçamento lateral */
+    }
+
+    .container-titulo h1 {
+      
+        margin: 10px 0;
+    }
+    .parte-azul{
+        color: #2D9CDB;
+    }
+
+    .sub-titulo {
+        font-size: 16px;
+        width: 90%; /* ocupa mais largura na tela */
+    }
 }

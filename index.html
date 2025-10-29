@@ -28,7 +28,7 @@
     <section class="section-header">
         <div id="header">
         <div class="container-logo">
-            <img src="./imagem/logo_AgrOS_corte.png">
+            <img  src="./imagem/logo_AgrOS_corte.png" onclick="locale.href='index.html' ">
         </div>
 
         <div class="nav-bar">
@@ -70,7 +70,7 @@
         </video>
 
         <div class="conteudo-principal">
-            <h1><span class="parte-verde">Gestão que rende tempo e </span><br> mais resultado para a sua loja.</h1>
+            <h1 class="titulo-inicio"><span class="parte-verde-inicio">Gestão que rende tempo e </span><br> mais resultado para a sua loja.</h1>
 
             <div class="paragrafos-header">
                 <p>Sistema intuitivo, eficiente e acessível de onde estiver.</p>
@@ -135,7 +135,7 @@
 
         <div class="container-titulo">
             <h1><span class="parte-verde">Pre</span><span class="parte-azul"><b>view</b></span></h1>
-            <h2 class="sub-titulo">O AgrOS te ajuda a reduzir custos e ter decisões mais assertivas. Centralize suas informações, automatize processos e aumente a sua produtividade!</h2>
+            <h2 class="sub-titulo">O AgrOS te ajuda a reduzir custos e ter decisões mais assertivas.  Centralize suas informações, automatize processos e aumente a sua produtividade!</h2>
         </div>
         <div class="carrossel">
             <button id="propriedade"  class="button-preview btn-carrossel ativo btn-1" onclick="propriedade()">Propriedades</button>
@@ -177,14 +177,14 @@
                 <div class="beneficios-planos">
                     <p class="titulo-beneficios-planos">Tudo do Plano 1</p>
                     <ul>
-                        <li>✔ Serviços</li>
-                        <li>✔ +30 relatórios</li>
-                        <li>✔ Cashback</li>
-                        <li>✔ Estoque</li>
+                        <li><i class="bi bi-check-circle"></i> Serviços</li>
+                        <li><i class="bi bi-check-circle"></i> +30 relatórios</li>
+                        <li><i class="bi bi-check-circle"></i> Cashback</li>
+                        <li><i class="bi bi-check-circle"></i> Estoque</li>
                     </ul>
                 </div>
 
-                <button class="botao-planos"><a href="pagamento.html">Botão</a></button>
+                <button class="botao-planos"><a href="pagamento.html">Assinar</a></button>
             </div>
         </div>
     </section>
@@ -274,120 +274,122 @@
             </div>
         </div>
     </section>
+
     <section class="section-contato" id="suporte">
         <div class="contato">
-        <div class="coluna-texto">
-            <div class="texto-contato-pai">
-                <h1>Entre em contato conosco</h1>
-                <span class="texto-contato">
-                    <p>Tem alguma dúvida, sugestão ou quer saber mais sobre nossos serviços? Nossa equipe está pronta para ajudar você! Preencha o formulário ao lado (ou abaixo) e responderemos o mais rápido possível.</p>
-                </span>
+            <div class="coluna-texto">
+                <div class="texto-contato-pai">
+                    <h1>Entre em contato conosco</h1>
+                    <span class="texto-contato">
+                        <p>Tem alguma dúvida, sugestão ou quer saber mais sobre nossos serviços? Nossa equipe está pronta
+                            para ajudar você! Preencha o formulário ao lado (ou abaixo) e responderemos o mais rápido
+                            possível.</p>
+                    </span>
+                </div>
+    
+                <hr class="hr-contato">
+    
+                <div class="check-pai-contato">
+                    <div class="check-contato">
+                        <div><img src="./imagem/check.png"></div>
+                        <p>Tire suas dúvidas com nossa equipe especializada</p>
+                    </div>
+    
+                    <div class="check-contato">
+                        <div><img src="./imagem/check.png"></div>
+                        <p>Receba suporte técnico rápido e eficiente</p>
+                    </div>
+    
+                    <div class="check-contato">
+                        <div><img src="./imagem/check.png"></div>
+                        <p>Envie sugestões sobre nossos serviços</p>
+                    </div>
+    
+                    <div class="check-contato">
+                        <div><img src="./imagem/check.png"></div>
+                        <p>Saiba sobre planos, preços e funcionalidades</p>
+                    </div>
+                </div>
+    
+                <div class="check-pai-botoes-contato">
+                    <div class="check-botao-contato">
+                        <div><img src="./imagem/email.png"></div>
+                        <p>suporteagros@example.com</p>
+                    </div>
+    
+                    <div class="check-botao-contato">
+                        <div><img src="./imagem/telefone.png"></div>
+                        <p>+19 98155 4785</p>
+                    </div>
+                </div>
             </div>
 
-            <hr>
-
-            <div class="check-pai-contato">
-                <div class="check-contato">
-                    <div><img src="./imagem/check.png"></div>
-                    <p>Tire suas dúvidas com nossa equipe especializada</p>
-                </div>  
-
-                <div class="check-contato">
-                    <div><img src="./imagem/check.png"></div>
-                    <p>Receba suporte técnico rápido e eficiente</p>
-                </div>
-
-                <div class="check-contato">
-                    <div><img src="./imagem/check.png"></div>
-                    <p>Envie sugestões ou feedbacks sobre nossos serviços</p>
-                </div>
-
-                <div class="check-contato">
-                    <div><img src="./imagem/check.png"></div>
-                    <p>Saiba mais sobre planos, preços e funcionalidades</p>
-                </div>
-            </div>
-
-            <div class="check-pai-botoes-contato">
-                <div class="check-botao-contato">
-                    <div><img src="./imagem/email.png"></div>
-                    <p>suporteagros@example.com</p>
-                </div>
-
-                <div class="check-botao-contato">
-                    <div><img src="./imagem/telefone.png"></div>
-                    <p>+19 98155 4785</p>
-                </div>
-                <div class="check-botao-contato">
-                    <div><img src="./imagem/email.png"></div>
-                    <p>suporteagros@example.com</p>
+            <div class="linha-divisao-contato"></div>
+    
+            <div class="coluna-formulario">
+                <div class="formulario-pai-contato">
+                    <div class="formulario-alinhamento">
+                        <label>Nome de empresa</label>
+                        <input type="text" placeholder="5555-5555-5555-5555">
+                    </div>
+    
+                    <div class="formulario-alinhamento">
+                        <label>E-mail</label>
+                        <input type="text" placeholder="agroOs@email.com">
+                    </div>
+    
+                    <div class="formulario-alinhamento">
+                        <label>Número</label>
+                        <input type="text" placeholder="+00 (00) 00000-0000">
+                    </div>
+    
+                    <div class="formulario-alinhamento">
+                        <label>Descrição</label>
+                        <textarea type="text" placeholder="Digite aqui sua dúvida..."></textarea>
+                    </div>
+    
+                    <button class="botao-envio">Enviar</button>
+                    <p>Ao entrar em contato conos você concorda com nossos <a href=""> Termos e Condições</a></p>
                 </div>
             </div>
         </div>
-
-        <div class="coluna-formulario">
-            <div class="formulario-pai-contato">
-                <div class="formulario-alinhamento">
-                    <label>Nome de empresa</label>
-                    <input type="text" placeholder="5555-5555-5555-5555">
-                </div>
-
-                <div class="formulario-alinhamento">
-                    <label>E-mail</label>
-                    <input type="text" placeholder="agroOs@email.com">
-                </div>
-                
-                <div class="formulario-alinhamento">
-                    <label>Número</label>
-                    <input type="text" placeholder="+00 (00) 00000-0000">
-                </div>
-
-                <div class="formulario-alinhamento">
-                    <label>Descrição</label>
-                    <textarea type="text" placeholder="Digite aqui sua dúvida..."></textarea>
-                </div>           
-
-                <button class="botao-envio">Botão</button>
-                <p>Ao entrar em contato conos você concorda com nosssos <a href=""> Termos e Condições</a></p>
-            </div>
-        </div>
-     </div>
     </section>
 
 <footer class="rodape-corpo">
-        
-    <div class="rodape-pai">
-            <div class="rodape-corpo-principal">
-                
-                <div class="imagem-logo-rodape"><img src="imagem/logo_AgrOS_corte.png"></div>
-
-                <div class="rodape icones-rodape">
-                    <div class="icone"><img src="./imagem/facebook-app-symbol.png" alt=""></div>
-                    <div class="icone"><img src="./imagem/facebook-app-symbol.png" alt=""></div>
-                    <div class="icone"><img src="./imagem/instagram (1).png" alt=""></div>
-                    <div class="icone"><img src="./imagem/linkedin-logo.png" alt=""></div>
-                </div>
-
-                <div class="rodape sobre-rodape">
-                   <h1>Sobre nós</h1>
-                    <div class="container-footer-texto container-footer-dimensao"><p>Termos de uso</p></div>
-                    <div class="container-footer-texto container-footer-dimensao"><p>Privacidade</p></div>
-                    <div class="container-footer-texto container-footer-dimensao"><p>Política de reembolso</p></div>
-                </div>
-
-                <div class="rodape suporte-rodape">
-                    <h1>Suporte</h1>
-                    <div class="container-footer-texto container-footer-dimensao"><img src="./imagem/telephone.png"><p>(19) 98155 4785</p></div>
-                    <div class="container-footer-texto container-footer-dimensao"><img src="./imagem/telephone.png"><p>(19) 98155 4785</p></div>
-                    <div class="container-footer-texto container-footer-dimensao"><img src="./imagem/telephone.png"><p>suporteagros@example.com</p></div>
-                </div>
-
-
+    <div class="linha">
+            <div class="topo-rodape">
+                <div class="rodape-corpo-principal">
+                    <div class="logo-rodape">
+                        <div class="imagem-logo-rodape"><img src="imagem/logo_AgrOS_corte.png"></div>
+                    </div>
+                    <div class="rodape-detalhes">
+                        <div class="sobre-rodape">
+                           <h1>Sobre nós</h1>
+                            <div class="container-footer-texto "><p>Termos de uso</p></div>
+                            <div class="container-footer-texto"><p>Privacidade</p></div>
+                            <div class="container-footer-texto"><p>Política de reembolso</p></div>
+                        </div>
+                        <div class="suporte-rodape">
+                            <h1>Suporte</h1>
+                            <div class="container-footer-texto"><img class="icon-footer" src="./imagem/telephone.png"><p>(19) 98155 4785</p></div>
+                            <div class="container-footer-texto"><img class="icon-footer" src="./imagem/telephone.png"><p>(19) 98155 4785</p></div>
+                            <div class="container-footer-texto"><img class="icon-footer" src="./imagem/telephone.png"><p>suporteagros@example.com</p></div>
+                        </div>
+                    </div>
             </div>
         </div>
-        <br>    
-            <div class="linha"></div>
-            <p class="icone-cop">© Soft Jr. s2</p>
+                <div class=" icones-rodape">
+                    <div class="icone"><img class="icon-footer" src="./imagem/facebook-app-symbol.png" alt=""></div>
+                    <div class="icone"><img class="icon-footer" src="./imagem/facebook-app-symbol.png" alt=""></div>
+                    <div class="icone"><img class="icon-footer" src="./imagem/instagram (1).png" alt=""></div>
+                    <div class="icone"><img class="icon-footer" src="./imagem/linkedin-logo.png" alt=""></div>
+                
+                </div>
+                <div class="container-icone-cop">
+                    <p class="icone-cop">© Soft Jr. s2</p>
+                </div>
+        </div>
+          
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

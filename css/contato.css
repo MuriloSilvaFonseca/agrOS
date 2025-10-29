@@ -9,7 +9,7 @@
     max-width: 1240px;
     height: 900px;
     display: grid;
-    grid-template-columns: 100px 11fr 10fr 100px;
+    grid-template-columns: 1fr 0.2fr 1fr;
     font-family: 'Inter', sans-serif;
 }
 
@@ -18,19 +18,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 870px;
-    min-height: 720px;
+    height: 680px;
     align-self: center;
-    border-right: 1px solid rgba(217, 217, 217, 1);
-    grid-column:  2 / 3;
+    grid-column:  1 / 2;
 }
 
 .coluna-texto hr {
     color: rgba(217, 217, 217, 1);
 }
 
-.check-pai-contato{
-    padding-top: 20px;
+.hr-contato {
+    background-color: rgb(39, 38, 38);
+    height: 3px;
 }
 
 .check-contato{
@@ -44,11 +43,11 @@
 .check-contato p{
     margin: 0;
     text-align: start;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .check-contato img{
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .check-contato div{
@@ -63,29 +62,32 @@
 
 .texto-contato{
     height: 120px;
-    font-size: 20px;
-    text-align: start;
+    font-size: 21px;
+    text-align: center;
 }
 
-.texto-contato-pai{
-    border-bottom: 1px solid rgba(217, 217, 217, 1); 
+.texto-contato p {
+    margin: 20px 0;
 }
 
 .texto-contato-pai h1 {
     font-size: 38px;
 }
 
-.check-pai-botoes-contato{
+.check-pai-botoes-contato {
     padding-top: 45px;
 }
-.check-pai-botoes-contato p{
+
+.check-pai-botoes-contato p {
     align-self: center;
     margin-bottom: 0;
 }
-.check-botao-contato{
+
+.check-botao-contato {
     display: flex;
     text-align: start;
     justify-content: start;
+    align-items: center;
     align-self: center;
     height: 40px;
     font-size: 17px;
@@ -93,9 +95,17 @@
 }
 
 .check-botao-contato img{
-    padding-right: 10px;
-    height: 28px;
-    width: 28px;
+    height: 23px;
+    width: 23px;
+    margin-right: 10px;
+}
+
+.linha-divisao-contato {
+    height: 720px;
+    width: 1px;
+    background-color: rgba(172, 172, 172, 0.432);
+    grid-column: 2 / 3;
+    margin: auto;
 }
 
 .coluna-formulario{
@@ -121,7 +131,8 @@
 }
 
 .formulario-pai-contato p{
-    width: 80%;
+    margin-top: 10px;
+    width: 88%;
     justify-self: center;
 }
 
@@ -176,34 +187,40 @@ textarea{
 
 @media  (max-width: 1200px) {
     .contato{
-        grid-template-columns: 30px 1fr 1fr 30px;
+        grid-template-columns: 0.9fr 0.1fr 1.1fr;
+        max-width: 750px;
     }
 
-    .coluna-texto p{
-        font-size: 17px;
+    .coluna-texto {
+        width: 90%;
     }
-
+    
     .coluna-texto h1{
-        font-size: 32px;
+        font-size: 35px;
+    }
+    .coluna-texto p{
+        font-size: 16px;
     }
 
     .check-contato img{
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
+        
     }
 
     .check-botao-contato img{
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
     }
 
     .check-contato{
         text-align: start;
+        align-items: start;
         justify-content: start;
     }
 
     .check-contato p, .check-botao-contato p{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
@@ -211,23 +228,26 @@ textarea{
     .contato{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
-        height: auto;    
+        height: auto;   
+        max-width: 400px; 
+    }
+
+    .linha-divisao-contato {
+        display: none;
     }
 
     .coluna-texto{
         border: solid white;
         justify-self: center;
-        width: 92%;
+        width: 100%;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         align-self: center;
-        max-height: auto;
-        min-height: auto;
         height: auto;
     }
 
     .coluna-texto p{
-        width: 75%;
+        width: 100%;
         justify-self: center;
     }
 
@@ -252,7 +272,14 @@ textarea{
     }
 
     .coluna-formulario {
+        height: auto;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+    }
+
+    .botao-envio {
+        height: auto;
+        padding: 10px 5px;
+        font-size: 10x;
     }
 }

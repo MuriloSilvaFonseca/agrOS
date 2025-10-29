@@ -17,8 +17,8 @@
   text-align: center;
   color: #333;
   width: 90%;
-  max-width: 1400px;
-  height: 780px;
+  max-width: 1000px;
+  height: 580px;
   margin: auto;
   background-color: transparent;
 }
@@ -50,7 +50,7 @@
   border: 1px solid #c7d9c0;
   width: 80%;
   border-radius: 20px;
-  padding: 120px 60px;
+  padding: 80px 60px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-align: left;
   margin: 0 auto;
@@ -123,7 +123,7 @@
 
 /* Comentário */
 .comentario-clientes {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #333;
   line-height: 1.6;
 }
@@ -132,9 +132,12 @@
 /* RESPONSIVIDADE CELULAR */
 
 @media (max-width: 768px) {
+  .section-clientes{
+    height: 600px;
+  }
   .card-clientes {
-    width: 90%;
-    padding: 30px 25px;
+    width: 100%;
+    padding: 30px 30px;
   }
 
   .cliente-info-clientes {
@@ -178,10 +181,16 @@
   .descricao-clientes {
     font-size: 0.95rem;
   }
-
+.section-clientes{
+  height: 750px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  align-items: center;
+}
   .card-clientes {
     width: 95%;
-    padding: 85px 20px;
+    padding: 20px 10px;
+    height: 300px;
   }
 
   .avatar-clientes {
