@@ -1,12 +1,20 @@
-.corpo-texto{
-    height: 750px;
+.corpo-texto-pai{
+    height: 100vh;
     align-items: center;
     display: flex;
     justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+}
+.corpo-texto-filho{
+    max-width: 1240px;
+    background-color: rgba(212, 212, 212, 0.439);
+    border-radius: 25px;
+    margin-top: 30px;
 }
 .texto{
-    width: 95%;
-    height: 90%;
-    background-color: rgba(128, 128, 128, 0.439);
-    margin-top: 40px;
+    padding: 40px;
+    text-align: start;
+    justify-self: center;
+    align-self: center;
 }

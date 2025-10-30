@@ -125,6 +125,12 @@
     padding-bottom: 15px;
 }
 
+.menu-mobile li:active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #7BC043;
+}
+
 .login-btn {
     padding: 10px 15px;
     margin-left: 25px;
