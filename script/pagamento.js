@@ -1,5 +1,6 @@
 let cnpjCpf = document.getElementById('cnpjCpf');
 let cleaveCnpjCpf;
+var mes_vencimento_cartao = "";
 
 cnpjCpf.addEventListener('input', () => {
     const contNumeros = cnpjCpf.value.replaceAll('.', '').replace('-','').replace('/', '');
@@ -49,6 +50,119 @@ var cleave = new Cleave('#numero-cartao', {
     }
 });
 
+// verificar se o cnpj esta corretamente formatado
+const validarCNPJ = (cnpj) => {
+  
+  cnpj = cnpj.replaceAll('.', '').replace('-','').replace('/', '')
+  if (cnpj.length !== 14) {
+      return false;
+  }
+
+  const proximoDigitoVerificador = (cnpjIncompleto) => {
+      let soma = 0
+      const pesos = (cnpjIncompleto.length === 12) ? [5,4,3,2,9,8,7,6,5,4,3,2] : [6,5,4,3,2,9,8,7,6,5,4,3,2];
+
+      for (let i = 0; i < cnpjIncompleto.length; i++) {
+          soma += Number(cnpjIncompleto.charAt(i)) * pesos[i];
+      }
+
+      const resto = soma % 11;
+      return resto < 2 ? '0' : (11 - resto).toString();
+  };
+
+  let primeiroDigitoVerificador = proximoDigitoVerificador(cnpj.substr(0, 12));
+  let segundoDigitoVerificador = proximoDigitoVerificador(cnpj.substr(0, 12) + primeiroDigitoVerificador);
+
+  let cnpjCorreto = cnpj.substr(0, 12) + primeiroDigitoVerificador + segundoDigitoVerificador;
+
+  return cnpj === cnpjCorreto;
+};
+
+// verificar se o cpf esta corretamente formatado
+function validarCPF(cpf) {
+    var Soma = 0
+    var Resto
+  
+    var strCPF = String(cpf).replace(/[^\d]/g, '')
+    
+    if (strCPF.length !== 11)
+        return false
+    
+    if ([
+      '00000000000',
+      '11111111111',
+      '22222222222',
+      '33333333333',
+      '44444444444',
+      '55555555555',
+      '66666666666',
+      '77777777777',
+      '88888888888',
+      '99999999999',
+      ].indexOf(strCPF) !== -1)
+      return false
+  
+    for (i=1; i<=9; i++)
+      Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+  
+    Resto = (Soma * 10) % 11
+  
+    if ((Resto == 10) || (Resto == 11)) 
+      Resto = 0
+  
+    if (Resto != parseInt(strCPF.substring(9, 10)) )
+      return false
+  
+    Soma = 0
+  
+    for (i = 1; i <= 10; i++)
+      Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i)
+  
+    Resto = (Soma * 10) % 11
+  
+    if ((Resto == 10) || (Resto == 11)) 
+      Resto = 0
+  
+    if (Resto != parseInt(strCPF.substring(10, 11) ) )
+      return false
+  
+    return true
+  }
+
+// func verificar data de vencimento
+function verificarData(data_vencimento) {
+  // Verificação de data
+  var separaVenc = data_vencimento.split("/");
+
+  let mm = parseInt(separaVenc[0], 10);
+  let yy = parseInt(separaVenc[1], 10);
+
+  
+
+  let ano = new Date().getFullYear();
+
+  if (mm >= 1 && mm <= 12 && yy >= ano) {
+      mes_vencimento_cartao = mm;
+      ano_vencimento_cartao = yy;
+      return true; 
+  } else {
+      return false; 
+  }
+
+  //Verificação de data
+  // var separaVenc = data_vencimento.split("/");
+  
+  // let mm = separaVenc[0];
+  // let yy = separaVenc[1];
+
+  // let ano = new Date().getFullYear();
+
+  // if (mm >= 1 && mm <= 12 && yy >= ano) {
+  //     var mes_vencimento_cartao = mm;
+  //     var ano_vencimento_cartao = yy;
+  // } 
+}
+
 $("#data-vencimento").mask("00/0000")
 
 $(document).ready(function () {
@@ -67,19 +181,6 @@ $(document).ready(function () {
         var data_vencimento = $("#data-vencimento").val();
         var cvv_cartao = $("#codigo-seguranca").val();
 
-        //Verificação de data
-        var separaVenc = data_vencimento.split("/");
-        
-        let mm = separaVenc[0];
-        let yy = separaVenc[1];
-
-        let ano = new Date().getFullYear();
-
-        if (mm >= 1 && mm <= 12 && yy >= ano) {
-            var mes_vencimento_cartao = mm;
-            var ano_vencimento_cartao = yy;
-        } 
-
         if (!validarDados(nome, email, telefone, cpfCnpj, cep, numero, titular_cartao, numero_cartao, data_vencimento, cvv_cartao)){
             return false;
         }
@@ -96,7 +197,7 @@ $(document).ready(function () {
             }).then((result) => {
                 if (result.isConfirmed) {
                     $.ajax({
-                        url: "https://9aa4df9c11de.ngrok-free.app/api/checkout",
+                        url: "https://583e6eca4c15.ngrok-free.app/api/checkout",
                         type: "POST",
                         data: {
                             id_plano: id_plano,
@@ -135,7 +236,7 @@ $(document).ready(function () {
                                 icon: "success"
                             });
                             console.log(response);
-                            locale.href="index.html";
+          
                         },
 
                         error: function (response) {
@@ -151,87 +252,6 @@ $(document).ready(function () {
             });
         
     });
-
-    // verificar se o cnpj esta corretamente formatado
-    const validarCNPJ = (cnpj) => {
-        cnpj = cnpj.replaceAll('.', '').replace('-','').replace('/', '')
-        if (cnpj.length !== 14) {
-            return false;
-        }
-    
-        const proximoDigitoVerificador = (cnpjIncompleto) => {
-            let soma = 0
-            const pesos = (cnpjIncompleto.length === 12) ? [5,4,3,2,9,8,7,6,5,4,3,2] : [6,5,4,3,2,9,8,7,6,5,4,3,2];
-    
-            for (let i = 0; i < cnpjIncompleto.length; i++) {
-                soma += Number(cnpjIncompleto.charAt(i)) * pesos[i];
-            }
-    
-            const resto = soma % 11;
-            return resto < 2 ? '0' : (11 - resto).toString();
-        };
-    
-        let primeiroDigitoVerificador = proximoDigitoVerificador(cnpj.substr(0, 12));
-        let segundoDigitoVerificador = proximoDigitoVerificador(cnpj.substr(0, 12) + primeiroDigitoVerificador);
-    
-        let cnpjCorreto = cnpj.substr(0, 12) + primeiroDigitoVerificador + segundoDigitoVerificador;
-    
-        return cnpj === cnpjCorreto;
-    };
-
-    // verificar se o cpf esta corretamente formatado
-    function validarCPF(cpf) {
-        var Soma = 0
-        var Resto
-      
-        var strCPF = String(cpf).replace(/[^\d]/g, '')
-        
-        if (strCPF.length !== 11)
-           return false
-        
-        if ([
-          '00000000000',
-          '11111111111',
-          '22222222222',
-          '33333333333',
-          '44444444444',
-          '55555555555',
-          '66666666666',
-          '77777777777',
-          '88888888888',
-          '99999999999',
-          ].indexOf(strCPF) !== -1)
-          return false
-      
-        for (i=1; i<=9; i++)
-          Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
-      
-        Resto = (Soma * 10) % 11
-      
-        if ((Resto == 10) || (Resto == 11)) 
-          Resto = 0
-      
-        if (Resto != parseInt(strCPF.substring(9, 10)) )
-          return false
-      
-        Soma = 0
-      
-        for (i = 1; i <= 10; i++)
-          Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i)
-      
-        Resto = (Soma * 10) % 11
-      
-        if ((Resto == 10) || (Resto == 11)) 
-          Resto = 0
-      
-        if (Resto != parseInt(strCPF.substring(10, 11) ) )
-          return false
-      
-        return true
-      }
-
-    
-
 
     // func para verificar se os dados foram preenchidos corretamente
     function validarDados(
@@ -259,7 +279,7 @@ $(document).ready(function () {
           valid = false;
         } else {
           $("#email-error").html("");
-          $("#nome").removeClass("input-error");
+          $("#email").removeClass("input-error");
         }
       
         // Telefone
@@ -334,6 +354,10 @@ $(document).ready(function () {
         // Data de vencimento
         if (data_vencimento.trim() === "") {
           $("#data_vencimento-error").html("Insira uma data válida");
+          $("#data-vencimento").addClass("input-error");
+          valid = false;
+        } else if(!verificarData(data_vencimento)) {
+          $("#data_vencimento-error").html("Data de vencimento inválida");
           $("#data-vencimento").addClass("input-error");
           valid = false;
         } else {

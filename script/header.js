@@ -11,4 +11,8 @@ $(document).ready(function(){
     $(".login-btn, .entrarMob").click(function(){
         location.href = "http://3.237.239.190";
     });
+
+    $(".saiba-mais-btn").click(function(){
+        location.href = "#planos";
+    });
 });
