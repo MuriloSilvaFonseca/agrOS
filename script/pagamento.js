@@ -1,3 +1,13 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Inicializa todos os selects com a classe nice-select2
+  const selects = document.querySelectorAll('.nice-select2');
+  selects.forEach(select => {
+    NiceSelect.bind(select);
+  });
+});
+
+
 let cnpjCpf = document.getElementById('cnpjCpf');
 let cleaveCnpjCpf;
 var mes_vencimento_cartao = "";
@@ -253,7 +263,7 @@ $(document).ready(function () {
         
     });
 
-    // func para verificar se os dados foram preenchidos corretamente
+    // Função para verificar se todos os dados foram preenchidos corretamente
     function validarDados(
         nome, email, telefone, cnpjCpf, cep, numero,
         titular_cartao, numero_cartao, data_vencimento, cvv_cartao
@@ -265,13 +275,12 @@ $(document).ready(function () {
             $("#nome-error").html("Insira um nome válido");
             $("#nome").addClass("input-error");
             valid = false;
-          } else {
+        } else {
             $("#nome-error").html("");
             $("#nome").removeClass("input-error");
-          }
+        }
       
         // Email
-        
         if (email.trim() === "") {
           $("#email-error").html("Insira um e-mail válido");
           $("#email").addClass("input-error");
@@ -346,6 +355,7 @@ $(document).ready(function () {
           $("#numero_cartao-error").html("Insira um número válido");
           $("#input-numero-cartao").addClass("input-error");
           valid = false;
+
         } else {
           $("#numero_cartao-error").html("");
           $("#input-numero-cartao").removeClass("input-error");
@@ -356,10 +366,12 @@ $(document).ready(function () {
           $("#data_vencimento-error").html("Insira uma data válida");
           $("#data-vencimento").addClass("input-error");
           valid = false;
+
         } else if(!verificarData(data_vencimento)) {
           $("#data_vencimento-error").html("Data de vencimento inválida");
           $("#data-vencimento").addClass("input-error");
           valid = false;
+
         } else {
           $("#data_vencimento-error").html("");
           $("#data-vencimento").removeClass("input-error");
@@ -376,10 +388,8 @@ $(document).ready(function () {
           $("#codigo-seguranca").removeClass("input-error");
 
         }
-      
         return valid;
       }
-      
 
     $("#cancelar-btn").click(function () {
         Swal.fire({
@@ -403,5 +413,3 @@ $(document).ready(function () {
         });
     });
 });
-
-    

@@ -3,6 +3,7 @@
     width: 100%;
     padding-bottom: 40px;
     padding-top: 40px;
+    display: flex;
     justify-content: center;
 }
 .preview b{
@@ -18,9 +19,6 @@
 
 .preview{
     width: 100%;
-    text-align: center;
-    justify-content: center;
-    justify-self: center;
     margin: auto;
     max-width: 1240px;
     background-color: transparent;
@@ -32,13 +30,12 @@
     padding-top: 15px;
     font-size: 20px;
     max-width: 800px;
-    justify-self: center;
+    text-align: center;
 }
 
 .texto-preview p{
     max-height: 80px;
     max-width: 770px;
-    justify-self: center;
 }
 
 .carrossel{
@@ -49,7 +46,6 @@
     border-radius: 45px;
     display: flex;
     justify-self: center;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -77,6 +73,7 @@
     max-width: 85%;
     min-width: 50%;
     margin-top: 20px;
+    display: flex;
     justify-self: center;
     border: 2px solid rgba(58, 125, 68, 1);
     border-radius: 20px;

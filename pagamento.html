@@ -14,6 +14,14 @@
     <link rel="shortcut icon" href="imagem/icon/logo_AgrOS_icon.png" type="image/x-icon">
     <script src="script/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!-- CSS do Nice Select 2 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nice-select2@2.0.0/dist/css/nice-select2.min.css" />
+<!-- JS do Nice Select 2 -->
+<script src="https://cdn.jsdelivr.net/npm/nice-select2@2.0.0/dist/js/nice-select2.min.js"></script>
+
+
+
     <style>
         .input-error {
             border:1px solid #D91C1C;
@@ -67,7 +75,6 @@
     </div> 
     </section>
 
-
     <!-- container total -->
     <section id="section-pagamento">
         <!-- conteudo do pagamento -->
@@ -80,35 +87,95 @@
                         <h1>Informações de pagamento</h1>
 
                         <input type="hidden" name="id_plano" id="id_plano" value="2">
-
-                        <label class="label-pagamento label-pagamento-header " for="nome">Nome da Empresa:</label>
-                        <input class="input-pagamento" type="text" id="nome" placeholder="Nome completo" maxlength="255">
-                        <div id="nome-error" class="texto-negado"></div>
-
-                        <label class="label-pagamento label-pagamento-header" for="email">E-mail:</label>
-                        <input class="input-pagamento" type="email" id="email" placeholder="exemplo@exemplo.com">
-                        <div id="email-error" class="texto-negado"></div>
-
-
-                        <label class="label-pagamento label-pagamento-header" for="telefone">Telefone:</label>
-                        <input class="input-pagamento" type="text" id="telefone" placeholder="(00) 00000-0000">
-                        <div id="telefone-error" class="texto-negado"></div>
-
-
-                        <label class="label-pagamento label-pagamento-header" for="cnpjCpf">CPF/CNPJ:</label>
-                        <input class="input-pagamento" type="text" id="cnpjCpf" placeholder="CPF ou CNPJ">
-                        <div id="cnpjCpf-error" class="texto-negado"></div>
-
-
-                        <label class="label-pagamento label-pagamento-footer" for="cep">CEP:</label>
-                        <input class="input-pagamento" type="text" id="cep" placeholder="00000-000" maxlength="9" minlength="9">
-                        <div id="cep-error" class="texto-negado"></div>
-
                         
-                        <label class="label-pagamento label-pagamento-footer" for="numero">Número:</label>
-                        <input class="input-pagamento" type="text" id="numero" placeholder="Digite o número do endereço">
-                        <div id="numero-error" class="texto-negado"></div>
+                        <div class="group-form">
+                            <div class="generic-group-form top-group-form">
+                                <label class="label-pagamento label-pagamento-header " for="nome">Nome da Empresa:</label>
+                                <input class="input-pagamento" type="text" id="nome" placeholder="Nome completo" maxlength="255">
+                                <div id="nome-error" class="texto-negado"></div>
+                            </div>
+                            <div class="generic-group-form sub-group-form">
+                                <label class="label-pagamento label-pagamento-header" for="telefone">Telefone:</label>
+                                <input class="input-pagamento" type="text" id="telefone" placeholder="(00) 00000-0000">
+                                <div id="telefone-error" class="texto-negado"></div>
+                            </div>
+                        </div>
 
+                        <div class="group-form">
+                            <div class="generic-group-form sub-group-form">
+                                <label class="label-pagamento label-pagamento-header" for="cnpjCpf">CPF/CNPJ:</label>
+                                <input class="input-pagamento" type="text" id="cnpjCpf" placeholder="CPF ou CNPJ">
+                                <div id="cnpjCpf-error" class="texto-negado"></div>
+                            </div>
+                            <div class="generic-group-form top-group-form">
+                                <label class="label-pagamento label-pagamento-header" for="email">E-mail:</label>
+                                <input class="input-pagamento" type="email" id="email" placeholder="exemplo@exemplo.com">
+                                <div id="email-error" class="texto-negado"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="group-form">
+                            <div class="generic-group-form mini-group-form">
+                                <label class="label-pagamento label-pagamento-footer" for="cep">CEP:</label>
+                                <input class="input-pagamento" type="text" id="cep" placeholder="00000-000" maxlength="9" minlength="9">
+                                <div id="cep-error" class="texto-negado"></div>
+                            </div>
+                            <div class="generic-group-form top-group-form">
+                                <label class="label-pagamento label-pagamento-header" for="logradouro">Logradouro:</label>
+                                <input class="input-pagamento" type="text" id="logradouro" placeholder="Rua, Avenida ou Estrada">
+                                <div id="logradouro-error" class="texto-negado"></div>
+                            </div>
+                        </div>
+
+                        <div class="group-form">
+                            <div class="generic-group-form top-group-form">
+                                <label class="label-pagamento label-pagamento-header" for="bairro">Bairro:</label>
+                                <input class="input-pagamento" type="text" id="bairro" placeholder="Nome do bairro">
+                                <div id="bairro-error" class="texto-negado"></div>
+                            </div>
+                            
+                            <div class="generic-group-form mini-group-form">
+                                <label class="label-pagamento label-pagamento-footer" for="numero">Número:</label>
+                                <input class="input-pagamento" type="text" id="numero" placeholder="XXX">
+                                <div id="numero-error" class="texto-negado"></div>
+                            </div>
+
+                            <div class="generic-group-form sub-group-form">
+                                <label class="label-pagamento label-pagamento-footer" for="estado">UF:</label>
+                                <select id="uf" class="input-pagamento nice-select2">
+                                    <option value="" disabled selected hidden>Selecione</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TO">TO</option>
+                                </select>
+                                  
+                                <div id="estado-error" class="texto-negado"></div>
+                            </div>
+                        </div>
                         
                     </div>
 
@@ -127,7 +194,7 @@
                         <!-- Grupo de campos lado a lado -->
                         <div class="group-form">
                             <!-- Campo 2: Data de vencimento -->
-                            <div class="sub-group-form">
+                            <div class="generic-group-form sub-group-form">
                                 <label class="label-pagamento label-pagamento-footer" for="data-vencimento">
                                     Data de vencimento:
                                 </label>
@@ -136,7 +203,7 @@
                             </div>
                         
                             <!-- Campo 3: Codigo de segurança -->
-                            <div class="sub-group-form">
+                            <div class="generic-group-form sub-group-form">
                                 <label class="label-pagamento label-pagamento-footer" for="codigo-seguranca">
                                     CVV:
                                 </label>
@@ -236,5 +303,6 @@
 
     <script src="script/header.js"></script>
     <script src="script/pagamento.js"></script>
+    <script src="script/viaCep.js"></script>
 </body>
 </html>

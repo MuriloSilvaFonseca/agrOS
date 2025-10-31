@@ -133,17 +133,16 @@
 
 @media (max-width: 768px) {
   .section-clientes{
-    height: 600px;
+    height: 750px;
   }
   .card-clientes {
-    width: 100%;
+    width: 90%;
     padding: 30px 30px;
+    margin: 0 auto;
   }
 
   .cliente-info-clientes {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+    margin-bottom: 20px;
   }
 
   .avatar-clientes {
@@ -152,12 +151,15 @@
 
   .cliente-dados-clientes {
     margin-left: 0;
+    width: 100%;
+    text-align: center;
   }
 
   .aspas-circulo-clientes {
     width: 100%;
     justify-content: center;
     margin-top: 10px;
+    align-items: center;
   }
 
   .aspas-clientes {
@@ -170,6 +172,7 @@
     text-align: center;
     font-size: 1rem;
     margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -189,8 +192,7 @@
 }
   .card-clientes {
     width: 95%;
-    padding: 20px 10px;
-    height: 300px;
+    padding: 20px 15px;
   }
 
   .avatar-clientes {
@@ -213,5 +215,7 @@
   .comentario-clientes {
     font-size: 0.95rem;
     line-height: 1.5;
+    text-align: left;
+    padding: 0 15px;
   }
 }
